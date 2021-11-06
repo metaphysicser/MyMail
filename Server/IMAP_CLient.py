@@ -19,14 +19,27 @@ import imaplib
 conn = imaplib.IMAP4(port = 143,host = 'localhost')
 print(1)
 conn.login("zpl@qq.com","10")
-print(2)
-ret = conn.getquota(root='xxoo@sex.com')
+# print(2)
+# ret = conn.getquota(root='xxoo@sex.com')
 # flag = '1'
 # while True:
 #     time.sleep(3)
 #     print('send to server with value: ' + flag)
 #     sock.send(flag.encode())
-#     print(sock.recv(1024))
+#     print(sock.recv(1024))f
 #     flag = (flag == '1') and '2' or '1'  # change to another type of value each time
 #
 #
+# client = socket.socket()
+#
+# client.connect(('localhost', 143))
+#
+# while True:
+#     upData = client.recv(1024)
+#     print(upData)
+#
+#     msg = input('>>:').strip()
+#     if not msg:
+#         continue
+#     else:
+#         client.send(msg.encode('utf-8'))

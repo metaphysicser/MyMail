@@ -1,0 +1,138 @@
+"""
+-*- coding: utf-8 -*-
+@Time    : 2021/11/6 10:47
+@Author  : 夕照深雨
+@File    : IMAPLib.py
+@Software: PyCharm
+
+Attention：
+
+"""
+import logging
+import re
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)  # 设置打印级别
+formatter = logging.Formatter('%(asctime)s %(filename)s %(funcName)s [line:%(lineno)d] %(levelname)s %(message)s')
+
+# 设置屏幕打印的格式
+sh = logging.StreamHandler()
+sh.setFormatter(formatter)
+logger.addHandler(sh)
+
+# 设置log保存
+fh = logging.FileHandler("IMAP_Server.log", encoding='utf8')
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
+command_format = re.compile(r'((?P<tag>[0-9a-zA-Z]+) (?P<data>.*))?', re.ASCII)  # 客户端命令的正则表达式,tag只能由数字和字母组成
+
+#  命令和其对应的有效状态
+
+Commands = {
+    # name            valid states
+    'APPEND': ('AUTH', 'SELECTED'),
+    'AUTHENTICATE': ('NONAUTH',),
+    'CAPABILITY': ('NONAUTH', 'AUTH', 'SELECTED', 'LOGOUT'),
+    'CHECK': ('SELECTED',),
+    'CLOSE': ('SELECTED',),
+    'COPY': ('SELECTED',),
+    'CREATE': ('AUTH', 'SELECTED'),
+    'DELETE': ('AUTH', 'SELECTED'),
+    'DELETEACL': ('AUTH', 'SELECTED'),
+    'ENABLE': ('AUTH',),
+    'EXAMINE': ('AUTH', 'SELECTED'),
+    'EXPUNGE': ('SELECTED',),
+    'FETCH': ('SELECTED',),
+    'GETACL': ('AUTH', 'SELECTED'),
+    'GETANNOTATION': ('AUTH', 'SELECTED'),
+    'GETQUOTA': ('AUTH', 'SELECTED'),
+    'GETQUOTAROOT': ('AUTH', 'SELECTED'),
+    'MYRIGHTS': ('AUTH', 'SELECTED'),
+    'LIST': ('AUTH', 'SELECTED'),
+    'LOGIN': ('NONAUTH',),
+    'LOGOUT': ('NONAUTH', 'AUTH', 'SELECTED', 'LOGOUT'),
+    'LSUB': ('AUTH', 'SELECTED'),
+    'MOVE': ('SELECTED',),
+    'NAMESPACE': ('AUTH', 'SELECTED'),
+    'NOOP': ('NONAUTH', 'AUTH', 'SELECTED', 'LOGOUT'),
+    'PARTIAL': ('SELECTED',),  # NB: obsolete
+    'PROXYAUTH': ('AUTH',),
+    'RENAME': ('AUTH', 'SELECTED'),
+    'SEARCH': ('SELECTED',),
+    'SELECT': ('AUTH', 'SELECTED'),
+    'SETACL': ('AUTH', 'SELECTED'),
+    'SETANNOTATION': ('AUTH', 'SELECTED'),
+    'SETQUOTA': ('AUTH', 'SELECTED'),
+    'SORT': ('SELECTED',),
+    'STARTTLS': ('NONAUTH',),
+    'STATUS': ('AUTH', 'SELECTED'),
+    'STORE': ('SELECTED',),
+    'SUBSCRIBE': ('AUTH', 'SELECTED'),
+    'THREAD': ('SELECTED',),
+    'UID': ('SELECTED',),
+    'UNSUBSCRIBE': ('AUTH', 'SELECTED'),
+    'UNSELECT': ('SELECTED',),
+}
+
+
+class IMAP:
+    class error(Exception):
+        pass  # 逻辑错误
+
+    class abort(error):
+        pass  # 连接错误
+
+    class readonly(abort):
+        pass  # 只读模式
+
+    def __init__(self):
+        self.state = "LOGOUT"
+
+    def handle_command(self, command):
+        try:
+            if not command:
+                logger.error("接受命令为空")
+                return ["* BAD Command!"]
+            match = command_format.match(command)
+            if match != None:
+                tag = match.group("tag")
+                data = match.group("data")
+                data = data.upper()
+                if data not in Commands.keys():
+                    logger.error(command + "中的" + data + "命令不存在")
+                    return ["* BAD Command!"]
+
+                return self.command_response(tag, data)
+            else:
+                print(match)
+                logger.error(command + " 是一个不符合格式的命令")
+                return ["* BAD Command!"]
+        except Exception as e:
+            pass
+
+    def command_response(self, tag, name):
+
+        if self.state not in Commands[name]:
+            logger.info("command %s illegal in state %s, "
+                        "only allowed in states %s" %
+                        (name, self.state,
+                         ', '.join(Commands[name])))
+            return [tag + " NO Unauthorized"]
+
+        if name == "CAPABILITY":
+            return self.get_capabilities(tag, name)
+
+    def get_capabilities(self,tag, name):
+        res = []
+        res.append("* CAPABILITY IMAP4rev1 AUTH=GSSAPI AUTH=PLAIN AUTH = LOGIN")
+        res.append(tag + " OK CAPABILITY Completed")
+        return res
+
+
+
+
+if __name__ == "__main__":
+    match = command_format.match("JDDE0 CAPABILITY")
+    print(match.group("tag"))
+    print(match.group("data"))

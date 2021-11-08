@@ -25,7 +25,8 @@ fh = logging.FileHandler("IMAP_Server.log", encoding='utf8')
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-command_format = re.compile(r'((?P<tag>[0-9a-zA-Z]+) (?P<data>.*))?', re.ASCII)  # 客户端命令的正则表达式,tag只能由数字和字母组成
+command_format = re.compile(r'((?P<tag>[0-9a-zA-Z]+) (?P<data>[^\s]*))( (?P<arg>.*))*',
+                            re.ASCII)  # 客户端命令的正则表达式,tag只能由数字和字母组成
 
 #  命令和其对应的有效状态
 
@@ -77,6 +78,10 @@ Commands = {
 
 
 class IMAP:
+    """
+    IMAP协议服务端响应
+
+    """
     class error(Exception):
         pass  # 逻辑错误
 
@@ -98,21 +103,28 @@ class IMAP:
             if match != None:
                 tag = match.group("tag")
                 data = match.group("data")
+                arg = match.group("arg")
                 data = data.upper()
                 if data not in Commands.keys():
                     logger.error(command + "中的" + data + "命令不存在")
                     return ["* BAD Command!"]
 
-                return self.command_response(tag, data)
+                return self.command_response(tag, data, arg)
             else:
-                print(match)
                 logger.error(command + " 是一个不符合格式的命令")
                 return ["* BAD Command!"]
         except Exception as e:
             pass
 
-    def command_response(self, tag, name):
+    def command_response(self, tag, name, arg):
+        """
+        命令响应格式
 
+        :param tag: 标志
+        :param name: 名称
+        :param arg: 参数
+        :return:
+        """
         if self.state not in Commands[name]:
             logger.info("command %s illegal in state %s, "
                         "only allowed in states %s" %
@@ -122,17 +134,36 @@ class IMAP:
 
         if name == "CAPABILITY":
             return self.get_capabilities(tag, name)
+        elif name == "LOGIN":
+            return self.login(tag, arg)
 
-    def get_capabilities(self,tag, name):
+    def get_capabilities(self, tag, name):
+        """
+        获得权限
+
+        :param tag:
+        :param name:
+        :return:
+        """
         res = []
+        self.state = "NONAUTH"
         res.append("* CAPABILITY IMAP4rev1 AUTH=GSSAPI AUTH=PLAIN AUTH = LOGIN")
         res.append(tag + " OK CAPABILITY Completed")
         return res
 
+    def login(self, tag, arg):
+        """
+        验证账号密码进行登陆
 
+        :param tag:
+        :param arg:
+        :return:
+        """
+        return [tag + " OK LOGIN completed"]
 
 
 if __name__ == "__main__":
-    match = command_format.match("JDDE0 CAPABILITY")
+    match = command_format.match("JDDE0 CAPABILITY zpl 010720")
     print(match.group("tag"))
     print(match.group("data"))
+    print(match.group("arg"))

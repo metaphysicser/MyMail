@@ -14,36 +14,10 @@ import socketserver
 from typing import Any
 from IMAPLib import IMAP
 import logging
-from logging.handlers import RotatingFileHandler
-
-logger_map = {
-
-}
+from Log.Log import Logger
 
 
-# 获取指定房间的日志记录器
-def get_logger(desk):
-    if desk not in logger_map.keys():
-        # 获取日志记录器
-        logger_ = logging.getLogger(desk)
-        logger_.setLevel(logging.INFO)
-
-        # 滚动日志处理器
-        handler = RotatingFileHandler(desk + '.log', 'a', 5024 * 1024, 1000000, 'utf8')
-        handler.setLevel(logging.INFO)
-
-        # 创建一个格式器formatter并将其添加到处理器handler
-        formatter = logging.Formatter(
-            '%(asctime)s %(filename)s %(funcName)s [line:%(lineno)d] %(levelname)s %(message)s')
-        handler.setFormatter(formatter)
-
-        # 为日志器logger添加上面创建的处理器handler
-        logger_.addHandler(handler)
-        logger_map[desk] = logger_
-    return logger_map[desk]
-
-
-logger = get_logger("history")
+logger = Logger("Log/server_history.log", logging.DEBUG, __name__).getlog()
 
 CRLF = b'\r\n'
 
@@ -71,9 +45,9 @@ class ThreadedTCPRequestHandler(socketserver.BaseRequestHandler):
                         break
 
                 logger.info("ip {} 向服务器线程 {} 发送信息:".format(self.client_address[0], cur_thread.name) + self.data)
-                # if not self.data:
-                #     logger.error("ip {} 和服务器线程 {} 链接丢失".format(self.client_address[0], cur_thread.name))
-                #     break
+                if not self.data:
+                    logger.error("ip {} 和服务器线程 {} 链接丢失".format(self.client_address[0], cur_thread.name))
+                    break
 
                 res = imap.handle_command(self.data)
                 for message in res:

@@ -9,33 +9,33 @@ Attention：
 
 """
 import logging
-from logging.handlers import RotatingFileHandler
-
-logger_map = {
-
-}
 
 
-# 获取指定房间的日志记录器
-def get_logger(desk):
-    if desk not in logger_map.keys():
-        # 获取日志记录器
-        logger_ = logging.getLogger(desk)
-        logger_.setLevel(logging.INFO)
+# 既把日志输出到控制台， 还要写入日志文件
+class Logger():
+    def __init__(self, logname="info", loglevel=logging.DEBUG, loggername=None):
+        """
+           指定保存日志的文件路径，日志级别，以及调用文件
+           将日志存入到指定的文件中
+        """
+        # 创建一个logger
+        self.logger = logging.getLogger(loggername)
+        self.logger.setLevel(loglevel)
+        # 创建一个handler，用于写入日志文件
+        fh = logging.FileHandler(logname,encoding="utf8")
+        fh.setLevel(loglevel)
+        if not self.logger.handlers:
+            # 再创建一个handler，用于输出到控制台
+            ch = logging.StreamHandler()
+            ch.setLevel(loglevel)
+            # 定义handler的输出格式
+            formatter = logging.Formatter('%(asctime)s %(filename)s %(funcName)s [line:%(lineno)d] %(levelname)s %(message)s')
+            fh.setFormatter(formatter)
+            ch.setFormatter(formatter)
+            # 给logger添加handler
+            self.logger.addHandler(fh)
+            self.logger.addHandler(ch)
 
-        # 滚动日志处理器
-        handler = RotatingFileHandler("Log/" + desk + '.log', 'a', 5024 * 1024, 1000000, 'utf8')
-        handler.setLevel(logging.INFO)
+    def getlog(self):
+        return self.logger
 
-        # 创建一个格式器formatter并将其添加到处理器handler
-        formatter = logging.Formatter(
-            '%(asctime)s %(filename)s %(funcName)s [line:%(lineno)d] %(levelname)s %(message)s')
-        handler.setFormatter(formatter)
-
-        # 为日志器logger添加上面创建的处理器handler
-        logger_.addHandler(handler)
-        logger_map[desk] = logger_
-    return logger_map[desk]
-
-
-logger = get_logger("history")

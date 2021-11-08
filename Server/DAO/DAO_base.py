@@ -8,11 +8,13 @@
 Attention：
 
 """
+import logging
+
 import pymysql
 import configparser
-from Server.Log.Log import get_logger
+from Server.Log.Log import Logger
 
-logger = get_logger("../Log/db_history")
+logger = Logger("../Log/database.log", logging.DEBUG, __name__).getlog()
 
 CONFIG_PATH = "config.ini"
 

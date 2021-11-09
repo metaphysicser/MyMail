@@ -9,14 +9,13 @@ Attention：
 
 """
 import logging
-
 import pymysql
 import configparser
 from Server.Log.Log import Logger
 
-logger = Logger("../Log/database.log", logging.DEBUG, __name__).getlog()
+logger = Logger("Log/database.log", logging.DEBUG, __name__).getlog()
 
-CONFIG_PATH = "config.ini"
+CONFIG_PATH = "DAO/config.ini"
 
 
 class DAO_base():
@@ -48,6 +47,22 @@ class DAO_base():
             return conn
         except Exception as e:
             logger.error(e)
+
+    def execute(self, sql_query: str):
+        """
+        执行sqlc查询语句
+
+        :param sql_query:
+        :return:
+        """
+        try:
+            self.cursor.execute(sql_query)
+            self.conn.commit()
+            return True
+        except Exception as e:
+            self.conn.rollback()
+            logger.error(e)
+            return False
 
     def close(self):
         """

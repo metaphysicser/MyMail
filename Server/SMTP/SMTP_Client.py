@@ -21,7 +21,7 @@ msg['From'] = email.utils.formataddr(('Author',
                                       'author@example.com'))
 msg['Subject'] = 'Simple test message'
 
-server = smtplib.SMTP('127.0.0.1', 1025)
+server = smtplib.SMTP('127.0.0.1', 587)
 server.set_debuglevel(True)  # 显示与服务器的通信
 try:
     server.sendmail('author@example.com',

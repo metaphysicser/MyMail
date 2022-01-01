@@ -15,8 +15,8 @@ from Log.Log import Logger
 import email.utils
 from DAO.DAO_transaction_records import DAO_transaction_records
 
+logger = Logger("./Log/SMTPServer_history.log", logging.DEBUG, __name__).getlog()
 
-logger = Logger("./Log/SMTP_Server.log", logging.DEBUG, __name__).getlog()
 
 # 可以添加附件进行更改
 
@@ -35,6 +35,7 @@ class CustomSMTPServer(smtpd.SMTPServer):
         d = DAO_transaction_records()
         d.insert(source, target, content)
 
+
 if __name__ == "__main__":
-    server = CustomSMTPServer(('127.0.0.1', 1025), None)
+    server = CustomSMTPServer(('127.0.0.1', 587), None)
     asyncore.loop()

@@ -11,6 +11,7 @@ Attention：
 import bcrypt
 import scrypt
 import os
+import base64
 
 
 def verify_password_bcrypt(password, hashed_password):
@@ -19,12 +20,14 @@ def verify_password_bcrypt(password, hashed_password):
     else:
         return False
 
+
 def verify_password_scrypt(hashed_password, guessed_password, max_time=0.5):
     try:
         scrypt.decrypt(hashed_password, guessed_password, max_time)
         return True
     except scrypt.error:
         return False
+
 
 def hash_password_scrypt(password: bytes, salt: bytes):
     """
@@ -37,15 +40,16 @@ def hash_password_scrypt(password: bytes, salt: bytes):
     return scrypt.hash(password, salt)
 
 
-def hash_password_bcrypt(password: str, salt: bytes):
+def hash_password_bcrypt(password: bytes, salt: bytes):
     """
-    对密码进行crypt哈希
+    对密码进行bcrypt哈希
 
     :param password: 密码，字符
     :param salt: 盐，字节
     :return: 加密后的密码
     """
-    return bcrypt.hashpw(password.encode(), salt)
+    password = base64.b64encode(password)
+    return bcrypt.hashpw(password, salt)
 
 
 class DoubleHashEncryption(object):
@@ -61,9 +65,8 @@ class DoubleHashEncryption(object):
         :param data_length: scrypt 算法的数据长度
         """
         self.data_length = data_length
-        self.salt_scrypt = os.urandom(self.data_length) # scrypt的盐
+        self.salt_scrypt = os.urandom(self.data_length)  # scrypt的盐
         self.salt_bcrypt = bcrypt.gensalt()  # bcrypt的盐
-
 
     def get_salt_bcrypt(self):
         """
@@ -87,7 +90,7 @@ class DoubleHashEncryption(object):
         :param password: 密码，字符串
         :return: 加密密码， 字节流
         """
-        return hash_password_bcrypt(str(hash_password_scrypt(password, self.salt_scrypt)), self.salt_bcrypt)
+        return hash_password_bcrypt(hash_password_scrypt(bytes(password,'utf8'), self.salt_scrypt), self.salt_bcrypt)
 
     def verify_double_hash(self, password: str, hash_password: bytes, salt_scrypt: bytes, salt_bcrypt: bytes):
         """
@@ -99,9 +102,13 @@ class DoubleHashEncryption(object):
         :param salt_bcrypt: bcypt的盐
         :return: 是否正确
         """
-
-        if hash_password == self.double_hash_encrption(password, salt_scrypt, salt_bcrypt):
+        self.salt_scrypt = salt_scrypt
+        self.salt_bcrypt = salt_bcrypt
+        if hash_password == self.double_hash_encryption(password):
             return True
         else:
             return False
+
+
+
 

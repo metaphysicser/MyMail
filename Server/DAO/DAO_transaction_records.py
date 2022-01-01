@@ -8,14 +8,13 @@
 Attention：
 
 """
-import pymysql
 
 from Server.DAO.DAO_base import DAO_base
 from Server.Log.Log import Logger
 import logging
 import time
 
-logger = Logger("Log/database.log", logging.DEBUG, __name__).getlog()
+logger = Logger("../Log/database.log", logging.DEBUG, __name__).getlog()
 
 
 class DAO_transaction_records(DAO_base):
@@ -37,8 +36,8 @@ class DAO_transaction_records(DAO_base):
 
         sql = """INSERT INTO transaction_records(source,
                  target, content, time)
-                 VALUES ('%s', '%s', '%s','%s')""" % (source, target, content, now)
-        if self.execute(sql):
+                 VALUES ('%s', '%s', '%s','%s')"""
+        if self.execute(sql,source, target, content, now):
             logger.info("transaction_records表 插入{}, {}, {}, {} 记录成功".format(source, target, content, now))
         else:
             logger.info("transaction_records表 插入{}, {}, {}, {} 记录失败".format(source, target, content, now))

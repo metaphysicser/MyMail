@@ -19,6 +19,8 @@ import imaplib
 conn = imaplib.IMAP4(port = 143,host = 'localhost')
 print(1)
 conn.login("zpl@qq.com","10")
+conn.select()
+type_, data = conn.search(None, 'ALL')
 # print(2)
 # ret = conn.getquota(root='xxoo@sex.com')
 # flag = '1'

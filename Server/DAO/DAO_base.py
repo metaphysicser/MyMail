@@ -52,16 +52,19 @@ class DAO_base():
 
     def execute(self, sql_query: str,*kwargs):
         """
-        执行sqlc查询语句
+        执行sql查询语句
+        Args:
+            sql_query: sql查询语句
+            *kwargs: 值参数
 
-        :param sql_query:
-        :return:
+        Returns:查询结果
+
         """
+
         try:
-            print(kwargs)
             self.cursor.execute(sql_query,kwargs)
             self.conn.commit()
-            return True
+            return self.cursor.fetchall()
         except Exception as e:
             self.conn.rollback()
             logger.error(e)

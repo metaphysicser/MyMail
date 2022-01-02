@@ -12,6 +12,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="utils.gragh_generate" />
+          <option value="source" />
         </list>
       </option>
     </inspection_tool>

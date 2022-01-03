@@ -14,3 +14,395 @@
 2022-01-03 18:35:05,105 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
 2022-01-03 18:35:05,105 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
 2022-01-03 18:35:05,105 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 19:51:39,614 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 19:52:28,703 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 19:52:33,686 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 19:52:40,528 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 19:52:40,528 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 19:52:40,528 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 19:52:49,363 Application_Server.py setup [line:62] INFO 服务器线程Thread-3开启
+2022-01-03 19:53:08,103 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-03 19:53:08,104 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 19:53:08,104 Application_Server.py finish [line:67] INFO APP服务器线程Thread-3关闭
+2022-01-03 19:53:15,929 Application_Server.py setup [line:62] INFO 服务器线程Thread-4开启
+2022-01-03 19:58:13,214 Application_Server.py setup [line:62] INFO 服务器线程Thread-5开启
+2022-01-03 20:01:28,765 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:02:47,205 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:17:16,333 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 20:17:38,349 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 20:17:38,349 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:17:38,349 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 20:17:42,230 Application_Server.py setup [line:62] INFO 服务器线程Thread-3开启
+2022-01-03 20:17:55,377 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-03 20:17:55,377 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:17:55,377 Application_Server.py finish [line:67] INFO APP服务器线程Thread-3关闭
+2022-01-03 20:17:58,443 Application_Server.py setup [line:62] INFO 服务器线程Thread-4开启
+2022-01-03 20:18:08,692 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-03 20:18:08,692 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:18:08,692 Application_Server.py finish [line:67] INFO APP服务器线程Thread-4关闭
+2022-01-03 20:19:42,467 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:19:45,340 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 20:19:53,096 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 20:19:53,096 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:19:53,096 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 20:19:58,349 Application_Server.py setup [line:62] INFO 服务器线程Thread-3开启
+2022-01-03 20:20:06,269 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-03 20:20:06,269 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:20:06,269 Application_Server.py finish [line:67] INFO APP服务器线程Thread-3关闭
+2022-01-03 20:21:45,783 Application_Server.py setup [line:62] INFO 服务器线程Thread-4开启
+2022-01-03 20:23:02,905 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-03 20:23:02,905 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:23:02,905 Application_Server.py finish [line:67] INFO APP服务器线程Thread-4关闭
+2022-01-03 20:23:08,773 Application_Server.py setup [line:62] INFO 服务器线程Thread-5开启
+2022-01-03 20:23:10,184 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-5 发送信息:JIEF login 
+2022-01-03 20:23:10,184 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-5 链接断开
+2022-01-03 20:23:10,184 Application_Server.py handle [line:56] ERROR name 'message' is not defined
+2022-01-03 20:23:10,185 Application_Server.py finish [line:67] INFO APP服务器线程Thread-5关闭
+2022-01-03 20:24:08,301 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:24:11,324 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 20:24:11,324 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:IGBK login 
+2022-01-03 20:24:11,324 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 20:24:11,324 Application_Server.py handle [line:56] ERROR name 'message' is not defined
+2022-01-03 20:24:11,324 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 20:25:12,751 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:25:15,641 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 20:25:15,641 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:OJNK login 
+2022-01-03 20:25:15,641 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:25:19,722 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 20:25:19,723 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:25:19,723 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 20:26:14,570 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:26:17,629 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 20:26:17,629 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:FEGJ login 
+2022-01-03 20:26:17,629 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 20:26:17,629 Application_Server.py handle [line:56] ERROR can only concatenate str (not "bytes") to str
+2022-01-03 20:26:17,629 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 20:26:44,601 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 20:26:47,170 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 20:26:47,170 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:OBOP login 
+2022-01-03 20:26:47,170 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:26:50,206 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 20:26:50,206 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:26:50,207 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-03 20:27:20,075 Application_Server.py setup [line:62] INFO 服务器线程Thread-3开启
+2022-01-03 20:27:20,253 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:FOPO login 
+2022-01-03 20:27:20,253 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-3 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:27:43,241 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-03 20:27:43,242 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 20:27:43,242 Application_Server.py finish [line:67] INFO APP服务器线程Thread-3关闭
+2022-01-03 20:28:30,526 Application_Server.py setup [line:62] INFO 服务器线程Thread-4开启
+2022-01-03 20:28:30,526 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-4 发送信息:EFIJ login 
+2022-01-03 20:28:30,527 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-4 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:28:41,110 Application_Server.py setup [line:62] INFO 服务器线程Thread-5开启
+2022-01-03 20:28:44,158 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-5 发送信息:HFJH login 
+2022-01-03 20:28:44,158 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-5 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:28:58,895 Application_Server.py setup [line:62] INFO 服务器线程Thread-6开启
+2022-01-03 20:28:58,895 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-6 发送信息:ELEC login 
+2022-01-03 20:28:58,896 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-6 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:29:23,880 Application_Server.py setup [line:62] INFO 服务器线程Thread-7开启
+2022-01-03 20:29:23,880 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:EIDC login 
+2022-01-03 20:29:23,880 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-7 向 ip 127.0.0.1 发送信息: 
+2022-01-03 20:29:50,912 Application_Server.py setup [line:62] INFO 服务器线程Thread-8开启
+2022-01-03 20:29:50,912 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-8 发送信息:HLLO login 
+2022-01-03 20:29:50,912 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-8 向 ip 127.0.0.1 发送信息: 
+2022-01-04 00:01:53,868 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:07:52,572 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:07:56,449 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 00:08:05,884 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:08:05,884 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-04 00:08:05,884 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:08:10,575 Application_Server.py setup [line:62] INFO 服务器线程Thread-3开启
+2022-01-04 00:08:27,891 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-04 00:08:27,891 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-04 00:08:27,891 Application_Server.py finish [line:67] INFO APP服务器线程Thread-3关闭
+2022-01-04 00:08:36,459 Application_Server.py setup [line:62] INFO 服务器线程Thread-4开启
+2022-01-04 00:08:39,259 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-04 00:08:39,259 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-04 00:08:39,259 Application_Server.py finish [line:67] INFO APP服务器线程Thread-4关闭
+2022-01-04 00:09:10,464 Application_Server.py setup [line:62] INFO 服务器线程Thread-5开启
+2022-01-04 00:11:26,509 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:11:29,724 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 00:11:29,724 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{"action": "login", "content": {"username": "", "password": ""}}
+2022-01-04 00:11:29,724 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息: 
+2022-01-04 00:11:29,724 Application_Server.py handle [line:45] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:
+2022-01-04 00:11:29,724 Application_Server.py handle [line:47] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接丢失
+2022-01-04 00:11:29,724 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:17:59,231 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:18:02,166 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-04 00:18:02,167 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:18:02,167 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:18:02,167 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:18:13,287 Application_Server.py setup [line:67] INFO 服务器线程Thread-3开启
+2022-01-04 00:18:13,287 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-04 00:18:13,288 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:18:13,288 Application_Server.py finish [line:72] INFO APP服务器线程Thread-3关闭
+2022-01-04 00:18:39,910 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:18:43,505 Application_Server.py setup [line:67] INFO 服务器线程Thread-7开启
+2022-01-04 00:18:43,506 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-04 00:18:43,506 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:18:43,506 Application_Server.py finish [line:72] INFO APP服务器线程Thread-7关闭
+2022-01-04 00:18:57,257 Application_Server.py setup [line:67] INFO 服务器线程Thread-8开启
+2022-01-04 00:18:57,257 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-8 链接断开
+2022-01-04 00:18:57,258 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:18:57,258 Application_Server.py finish [line:72] INFO APP服务器线程Thread-8关闭
+2022-01-04 00:19:37,881 Application_Server.py setup [line:67] INFO 服务器线程Thread-9开启
+2022-01-04 00:19:37,882 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-9 链接断开
+2022-01-04 00:19:37,882 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:19:37,883 Application_Server.py finish [line:72] INFO APP服务器线程Thread-9关闭
+2022-01-04 00:20:21,084 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:20:25,127 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-04 00:20:25,127 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:20:25,128 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:20:25,128 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:22:27,178 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:22:31,147 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-04 00:22:31,147 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:22:31,148 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:22:31,148 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:23:46,136 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:23:50,012 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-04 00:23:50,012 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:23:50,012 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:23:50,012 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:26:33,161 Application_Server.py setup [line:67] INFO 服务器线程Thread-3开启
+2022-01-04 00:26:33,162 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-04 00:26:33,162 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:26:33,162 Application_Server.py finish [line:72] INFO APP服务器线程Thread-3关闭
+2022-01-04 00:26:49,129 Application_Server.py setup [line:67] INFO 服务器线程Thread-4开启
+2022-01-04 00:26:49,129 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-04 00:26:49,129 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:26:49,130 Application_Server.py finish [line:72] INFO APP服务器线程Thread-4关闭
+2022-01-04 00:27:57,889 Application_Server.py setup [line:67] INFO 服务器线程Thread-5开启
+2022-01-04 00:27:57,890 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-5 链接断开
+2022-01-04 00:27:57,890 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:27:57,890 Application_Server.py finish [line:72] INFO APP服务器线程Thread-5关闭
+2022-01-04 00:28:16,818 Application_Server.py setup [line:67] INFO 服务器线程Thread-6开启
+2022-01-04 00:28:16,818 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-6 链接断开
+2022-01-04 00:28:16,819 Application_Server.py handle [line:61] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:28:16,819 Application_Server.py finish [line:72] INFO APP服务器线程Thread-6关闭
+2022-01-04 00:30:36,551 Application_Server.py <module> [line:84] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:30:42,577 Application_Server.py setup [line:68] INFO 服务器线程Thread-7开启
+2022-01-04 00:30:42,578 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-04 00:30:42,578 Application_Server.py handle [line:62] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:30:42,578 Application_Server.py finish [line:73] INFO APP服务器线程Thread-7关闭
+2022-01-04 00:31:09,053 Application_Server.py <module> [line:84] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:31:28,974 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-04 00:31:28,974 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:31:28,974 Application_Server.py handle [line:62] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:31:28,974 Application_Server.py finish [line:73] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:33:35,129 Application_Server.py <module> [line:84] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:33:39,522 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-04 00:33:39,522 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:33:39,523 Application_Server.py handle [line:62] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:33:39,523 Application_Server.py finish [line:73] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:34:17,761 Application_Server.py <module> [line:84] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:34:21,765 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-04 00:34:21,765 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:34:21,765 Application_Server.py handle [line:62] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:34:21,765 Application_Server.py finish [line:73] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:35:20,968 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:35:24,679 Application_Server.py setup [line:71] INFO 服务器线程Thread-2开启
+2022-01-04 00:35:24,680 Application_Server.py handle [line:64] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:35:24,680 Application_Server.py handle [line:65] ERROR can only concatenate str (not "dict") to str
+2022-01-04 00:35:24,680 Application_Server.py finish [line:76] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:35:59,943 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:36:06,800 Application_Server.py setup [line:71] INFO 服务器线程Thread-2开启
+2022-01-04 00:36:06,801 Application_Server.py handle [line:46] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:
+2022-01-04 00:36:06,801 Application_Server.py handle [line:62] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:
+2022-01-04 00:37:14,795 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:37:17,842 Application_Server.py setup [line:65] INFO 服务器线程Thread-2开启
+2022-01-04 00:37:17,842 Application_Server.py handle [line:42] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 00:37:17,843 Application_Server.py handle [line:56] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:
+2022-01-04 00:37:17,843 Application_Server.py handle [line:58] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:37:17,843 Application_Server.py handle [line:59] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 00:37:17,843 Application_Server.py finish [line:70] INFO APP服务器线程Thread-2关闭
+2022-01-04 00:38:22,770 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-04 00:38:26,004 Application_Server.py setup [line:65] INFO 服务器线程Thread-2开启
+2022-01-04 00:38:26,004 Application_Server.py handle [line:42] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 00:38:26,004 Application_Server.py handle [line:56] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': 'right password'}}
+2022-01-04 00:38:26,004 Application_Server.py handle [line:58] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 00:38:26,005 Application_Server.py handle [line:59] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 00:38:26,005 Application_Server.py finish [line:70] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:08:07,641 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:08:15,156 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 01:08:15,156 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:08:15,157 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:08:15,157 Application_Server.py handle [line:56] ERROR 'Message_handler' object has no attribute 'undefine'
+2022-01-04 01:08:15,157 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:10:24,602 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:10:30,267 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 01:10:30,267 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:10:30,267 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:10:30,267 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 01:10:30,267 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:11:43,311 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:11:58,051 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 01:11:58,052 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:11:58,052 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:11:58,052 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 01:11:58,052 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:12:24,576 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:12:30,747 Application_Server.py setup [line:62] INFO 服务器线程Thread-7开启
+2022-01-04 01:12:30,749 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:12:30,749 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-04 01:12:30,750 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 01:12:30,750 Application_Server.py finish [line:67] INFO APP服务器线程Thread-7关闭
+2022-01-04 01:13:15,399 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:13:27,080 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:13:27,081 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:13:27,081 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:13:27,081 Application_Server.py handle [line:57] ERROR Object of type method is not JSON serializable
+2022-01-04 01:13:27,081 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:21:26,145 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:21:29,326 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:21:29,326 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:21:29,326 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:21:29,326 Application_Server.py handle [line:57] ERROR 'Message_handler' object has no attribute 'commands'
+2022-01-04 01:21:29,326 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:21:45,649 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:21:48,354 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:21:48,355 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:21:48,377 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:21:48,377 Application_Server.py handle [line:57] ERROR 'DAO_email_user' object has no attribute 'login'
+2022-01-04 01:21:48,377 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:22:35,541 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:22:44,093 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:22:44,093 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:22:44,100 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:22:44,101 Application_Server.py handle [line:57] ERROR 'DAO_email_user' object has no attribute '_user'
+2022-01-04 01:22:44,101 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:23:04,349 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:23:07,333 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:23:07,333 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:23:07,362 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:23:07,363 Application_Server.py handle [line:57] ERROR tuple index out of range
+2022-01-04 01:23:07,363 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:24:29,094 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:24:31,625 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:24:31,626 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:24:31,635 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:24:31,635 Application_Server.py handle [line:57] ERROR tuple index out of range
+2022-01-04 01:24:31,636 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:26:04,358 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:26:07,060 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:26:07,060 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:26:07,068 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:26:07,068 Application_Server.py handle [line:57] ERROR tuple index out of range
+2022-01-04 01:26:07,068 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:26:16,428 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:26:22,231 Application_Server.py setup [line:63] INFO 服务器线程Thread-7开启
+2022-01-04 01:26:22,231 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:26:22,264 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-04 01:26:22,264 Application_Server.py handle [line:57] ERROR tuple index out of range
+2022-01-04 01:26:22,264 Application_Server.py finish [line:67] INFO APP服务器线程Thread-7关闭
+2022-01-04 01:27:06,609 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:27:09,926 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:27:09,926 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:27:09,951 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:27:09,951 Application_Server.py handle [line:57] ERROR tuple index out of range
+2022-01-04 01:27:09,951 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:27:50,711 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:27:54,620 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:27:54,621 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:27:54,629 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:27:54,629 Application_Server.py handle [line:57] ERROR tuple index out of range
+2022-01-04 01:27:54,629 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:28:14,424 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:28:17,399 Application_Server.py setup [line:63] INFO 服务器线程Thread-2开启
+2022-01-04 01:28:17,400 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:28:17,409 Application_Server.py handle [line:54] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:None
+2022-01-04 01:28:17,409 Application_Server.py handle [line:56] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:28:17,409 Application_Server.py handle [line:57] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 01:28:17,409 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:30:03,993 Application_Server.py <module> [line:79] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:30:07,435 Application_Server.py setup [line:64] INFO 服务器线程Thread-2开启
+2022-01-04 01:30:07,435 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:30:07,444 Application_Server.py handle [line:55] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:None
+2022-01-04 01:30:07,444 Application_Server.py handle [line:57] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:30:07,444 Application_Server.py handle [line:58] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 01:30:07,444 Application_Server.py finish [line:68] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:31:22,636 Application_Server.py <module> [line:79] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:31:25,380 Application_Server.py setup [line:64] INFO 服务器线程Thread-2开启
+2022-01-04 01:31:25,381 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:31:25,389 Application_Server.py handle [line:55] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:None
+2022-01-04 01:31:25,389 Application_Server.py handle [line:57] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:31:25,389 Application_Server.py handle [line:58] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 01:31:25,390 Application_Server.py finish [line:68] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:31:56,021 Application_Server.py <module> [line:79] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:31:58,469 Application_Server.py setup [line:64] INFO 服务器线程Thread-2开启
+2022-01-04 01:31:58,470 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:31:58,479 Application_Server.py handle [line:55] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-04 01:31:58,479 Application_Server.py handle [line:57] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:31:58,479 Application_Server.py handle [line:58] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 01:31:58,479 Application_Server.py finish [line:68] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:33:18,621 Application_Server.py <module> [line:79] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:33:24,524 Application_Server.py setup [line:64] INFO 服务器线程Thread-2开启
+2022-01-04 01:33:24,524 Application_Server.py handle [line:44] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:33:24,534 Application_Server.py handle [line:55] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-04 01:33:24,534 Application_Server.py handle [line:57] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:33:24,534 Application_Server.py handle [line:58] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 01:33:24,534 Application_Server.py finish [line:68] INFO APP服务器线程Thread-2关闭
+2022-01-04 01:59:46,458 Application_Server.py <module> [line:76] INFO APP服务器开始工作，监听端口53831
+2022-01-04 01:59:49,397 Application_Server.py setup [line:61] INFO 服务器线程Thread-2开启
+2022-01-04 01:59:49,397 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 01:59:49,397 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 01:59:49,398 Application_Server.py handle [line:55] ERROR 'Message_handler' object has no attribute 'message'
+2022-01-04 01:59:49,398 Application_Server.py finish [line:65] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:00:19,424 Application_Server.py <module> [line:76] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:00:23,724 Application_Server.py setup [line:61] INFO 服务器线程Thread-2开启
+2022-01-04 02:00:23,724 Application_Server.py finish [line:65] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:02:01,241 Application_Server.py <module> [line:76] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:02:04,447 Application_Server.py setup [line:61] INFO 服务器线程Thread-2开启
+2022-01-04 02:02:04,447 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:02:04,447 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:02:04,447 Application_Server.py handle [line:55] ERROR Object of type method is not JSON serializable
+2022-01-04 02:02:04,447 Application_Server.py finish [line:65] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:02:59,608 Application_Server.py <module> [line:76] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:03:02,558 Application_Server.py setup [line:61] INFO 服务器线程Thread-2开启
+2022-01-04 02:03:02,558 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:03:02,558 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:03:02,558 Application_Server.py handle [line:55] ERROR Object of type method is not JSON serializable
+2022-01-04 02:03:02,558 Application_Server.py finish [line:65] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:03:39,479 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:03:43,111 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:03:43,111 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:03:43,111 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:03:43,112 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 02:03:43,112 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:05:05,403 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:05:08,142 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:05:08,142 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:05:08,143 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:05:08,143 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 02:05:08,143 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:05:37,181 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:05:39,790 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:05:39,791 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:05:39,791 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:05:39,791 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 02:05:39,791 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:06:17,777 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:06:20,783 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:06:20,784 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:06:20,784 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:06:20,784 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 02:06:20,784 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:07:19,222 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:07:21,796 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:07:21,796 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:07:21,796 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:07:21,796 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 02:07:21,796 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:08:25,647 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:08:28,897 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:08:28,898 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:08:28,898 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:08:28,898 Application_Server.py handle [line:56] ERROR Object of type method is not JSON serializable
+2022-01-04 02:08:28,898 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 02:09:23,258 Application_Server.py <module> [line:77] INFO APP服务器开始工作，监听端口53831
+2022-01-04 02:09:26,304 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-04 02:09:26,305 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 02:09:26,323 Application_Server.py handle [line:53] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-04 02:09:26,323 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 02:09:26,324 Application_Server.py handle [line:56] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 02:09:26,324 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭

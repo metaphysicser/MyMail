@@ -63,7 +63,9 @@ class DAO_email_user(DAO_base):
 
         result = self.execute(sql,username)
 
-        if result != False: # 是否存在该账号
+        print(result)
+
+        if len(result) != 0: # 是否存在该账号
             password_db, salt_scrypt, salt_bcrypt = result[0]
             dbe = DoubleHashEncryption()
             if dbe.verify_double_hash(password, password_db, salt_scrypt, salt_bcrypt):
@@ -73,8 +75,8 @@ class DAO_email_user(DAO_base):
                 logger.info("系统查询email_user表的用户{}, 输入密码为{}, 注册密码为{}，不一致不允许登陆".format(username, password, password_db))
                 return False
         else:
-            return False
             logger.info("系统查询email_user表的用户{}不存在".format(username))
+            return None
 
     def delete_user(self,username)->bool:
         """

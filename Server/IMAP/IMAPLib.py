@@ -13,7 +13,7 @@ import re
 import logging
 from Server.Log.Log import Logger
 
-logger = Logger("Log/server_history.log", logging.DEBUG, __name__).getlog()
+logger = Logger("../Log/server_history.log", logging.DEBUG, __name__).getlog()
 
 command_format = re.compile(r'((?P<tag>[0-9a-zA-Z]+) (?P<data>[^\s]*))( (?P<arg>.*))*',
                             re.ASCII)  # 客户端命令的正则表达式,tag只能由数字和字母组成

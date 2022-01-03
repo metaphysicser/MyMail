@@ -14,6 +14,7 @@ import resource
 
 class Login_View(QWidget):
     quit_signal = QtCore.pyqtSignal()
+    login_signal = QtCore.pyqtSignal()
     def __init__(self, parent=None):
         super(Login_View, self).__init__(parent)
         self.setupUi(self)
@@ -21,6 +22,7 @@ class Login_View(QWidget):
 
     def connect_signal(self):
         self.pushButton.clicked.connect(self.quit_signal)
+        self.pushButton_3.clicked.connect(self.login_signal)
 
     def setupUi(self, Form):
         self.setWindowFlags(Qt.Qt.CustomizeWindowHint)

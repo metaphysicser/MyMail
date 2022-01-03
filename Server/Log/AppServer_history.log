@@ -1,0 +1,16 @@
+2022-01-02 17:24:38,748 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-02 17:24:44,865 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-02 23:28:00,054 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-02 23:28:05,789 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 01:07:39,642 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 01:07:43,928 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 01:07:57,913 Application_Server.py setup [line:62] INFO 服务器线程Thread-3开启
+2022-01-03 01:08:22,817 Application_Server.py setup [line:62] INFO 服务器线程Thread-4开启
+2022-01-03 01:08:29,852 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-03 01:08:29,852 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 01:08:29,852 Application_Server.py finish [line:67] INFO APP服务器线程Thread-4关闭
+2022-01-03 18:34:54,972 Application_Server.py <module> [line:78] INFO APP服务器开始工作，监听端口53831
+2022-01-03 18:35:00,630 Application_Server.py setup [line:62] INFO 服务器线程Thread-2开启
+2022-01-03 18:35:05,105 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-03 18:35:05,105 Application_Server.py handle [line:56] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-03 18:35:05,105 Application_Server.py finish [line:67] INFO APP服务器线程Thread-2关闭

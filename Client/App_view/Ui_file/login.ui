@@ -44,7 +44,7 @@
      <x>0</x>
      <y>20</y>
      <width>581</width>
-     <height>288</height>
+     <height>290</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -112,7 +112,11 @@
       <item>
        <widget class="QLineEdit" name="lineEdit">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
+         <string notr="true">background-color: rgb(255, 255, 255);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color:grey;</string>
         </property>
         <property name="text">
          <string/>
@@ -120,7 +124,15 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2"/>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color:grey;</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -132,7 +144,7 @@
      <x>0</x>
      <y>313</y>
      <width>654</width>
-     <height>95</height>
+     <height>97</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">

@@ -15,7 +15,7 @@ import random
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import QCoreApplication
 from PyQt5.QtWidgets import QApplication
-from Client.App_view.Login_view.Login_view import Login_View
+from Client.App_view.Login_view.Login_View import Login_View
 from Client.Model.App_Model import App_Model
 
 

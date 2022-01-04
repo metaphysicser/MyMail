@@ -406,3 +406,22 @@
 2022-01-04 02:09:26,323 Application_Server.py handle [line:55] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
 2022-01-04 02:09:26,324 Application_Server.py handle [line:56] ERROR Expecting value: line 1 column 1 (char 0)
 2022-01-04 02:09:26,324 Application_Server.py finish [line:66] INFO APP服务器线程Thread-2关闭
+2022-01-04 18:38:49,196 Application_Server.py <module> [line:76] INFO APP服务器开始工作，监听端口53831
+2022-01-04 18:38:56,229 Application_Server.py setup [line:61] INFO 服务器线程Thread-2开启
+2022-01-04 18:38:56,229 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 18:38:56,263 Application_Server.py handle [line:52] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-04 18:38:56,263 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-04 18:38:56,263 Application_Server.py handle [line:55] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 18:38:56,263 Application_Server.py finish [line:65] INFO APP服务器线程Thread-2关闭
+2022-01-04 18:39:01,904 Application_Server.py setup [line:61] INFO 服务器线程Thread-3开启
+2022-01-04 18:39:01,904 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-04 18:39:01,927 Application_Server.py handle [line:52] INFO 服务器APP线程 Thread-3 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-04 18:39:01,928 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-04 18:39:01,928 Application_Server.py handle [line:55] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 18:39:01,928 Application_Server.py finish [line:65] INFO APP服务器线程Thread-3关闭
+2022-01-04 18:39:07,656 Application_Server.py setup [line:61] INFO 服务器线程Thread-4开启
+2022-01-04 18:39:07,656 Application_Server.py handle [line:43] INFO ip 127.0.0.1 向APP服务器线程 Thread-4 发送信息:{'action': 'login', 'content': {'username': '一我', 'password': '一4w'}}
+2022-01-04 18:39:07,670 Application_Server.py handle [line:52] INFO 服务器APP线程 Thread-4 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-04 18:39:07,670 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-04 18:39:07,670 Application_Server.py handle [line:55] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-04 18:39:07,670 Application_Server.py finish [line:65] INFO APP服务器线程Thread-4关闭

@@ -63,8 +63,6 @@ class DAO_email_user(DAO_base):
 
         result = self.execute(sql,username)
 
-        print(result)
-
         if len(result) != 0: # 是否存在该账号
             password_db, salt_scrypt, salt_bcrypt = result[0]
             dbe = DoubleHashEncryption()
@@ -104,4 +102,3 @@ class DAO_email_user(DAO_base):
 if __name__ == "__main__":
     d = DAO_email_user()
     d.register_user("124","125")
-    d.delete_user("124")

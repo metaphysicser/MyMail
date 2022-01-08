@@ -9,3 +9,21 @@
 2021-11-09 20:10:52,069 IMAP_Server.py handle [line:47] INFO ip 127.0.0.1 向服务器线程 Thread-2 发送信息:OECG2 SELECT INBOX
 2021-11-09 20:10:52,069 IMAPLib.py command_response [line:119] INFO command SELECT illegal in state NONAUTH, only allowed in states AUTH, SELECTED
 2021-11-09 20:10:52,070 IMAP_Server.py handle [line:55] INFO 服务器线程 Thread-2 向 ip 127.0.0.1 发送信息:OECG2 NO Unauthorized
+2022-01-07 18:26:12,719 Send_Mail.py send_email [line:56] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-07 18:26:12,719 Send_Mail.py send_email [line:57] ERROR 'smtpqq.com'
+2022-01-07 18:26:30,880 Send_Mail.py send_email [line:56] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-07 18:26:30,880 Send_Mail.py send_email [line:57] ERROR 无法构建邮件正文
+2022-01-07 18:27:07,353 Send_Mail.py send_email [line:57] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-07 18:27:07,353 Send_Mail.py send_email [line:58] ERROR 无法构建邮件正文
+2022-01-07 18:27:35,516 Send_Mail.py send_email [line:56] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-07 18:27:35,516 Send_Mail.py send_email [line:57] ERROR 'SendMail' object has no attribute 'sender'
+2022-01-07 18:27:54,167 Send_Mail.py send_email [line:60] INFO 用户zpl发往zpl010720@qq.com的邮件发送成功
+2022-01-07 18:30:50,994 Send_Mail.py message [line:93] ERROR [Errno 2] No such file or directory: '1.txt'
+2022-01-07 18:30:50,994 Send_Mail.py send_email [line:57] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-07 18:30:50,994 Send_Mail.py send_email [line:58] ERROR 无法构建邮件正文
+2022-01-07 18:31:25,753 Send_Mail.py send_email [line:61] INFO 用户zpl发往zpl010720@qq.com的邮件发送成功
+2022-01-07 18:34:02,973 Send_Mail.py send_email [line:61] INFO 用户zpl发往zpl010720@qq.com的邮件发送成功
+2022-01-07 18:34:17,192 Send_Mail.py send_email [line:61] INFO 用户zpl发往zpl010720@qq.com的邮件发送成功
+2022-01-08 23:34:37,094 IMAPLib.py handle_command [line:104] ERROR C1a32fg3534 capability 是一个不符合格式的命令
+2022-01-08 23:35:08,316 IMAPLib.py handle_command [line:104] ERROR [A[A[Ahfa  CAPABILITY 是一个不符合格式的命令
+2022-01-09 00:13:30,106 Send_Mail.py send_email [line:61] INFO 用户test发往zpl010720@qq.com的邮件发送成功

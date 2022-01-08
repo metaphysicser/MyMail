@@ -39,6 +39,7 @@ class App_Controller:
         username = self._view.lineEdit.text()
         password = self._view.lineEdit_2.text()
         res = self._model.login(username, password)  # 得到的结果
+        print(res)
         QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
         if res["action"] == "login_response" and res["content"]["status"] == "True":  # 登陆成功
             pass

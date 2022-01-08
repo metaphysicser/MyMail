@@ -17,7 +17,7 @@ import logging
 from Server.Log.Log import Logger
 
 
-logger = Logger("Log/IMAPserver_history.log", logging.DEBUG, __name__).getlog()
+logger = Logger("../Log/IMAPserver_history.log", logging.DEBUG, __name__).getlog()
 
 CRLF = b'\r\n'
 

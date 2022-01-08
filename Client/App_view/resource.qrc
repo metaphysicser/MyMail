@@ -1,5 +1,22 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>img/logo.png</file>
+    <file>img/标题.png</file>
+    <file>img/草稿箱_按下.png</file>
+    <file>img/草稿箱_平时.png</file>
     <file>img/登陆背景图.png</file>
+    <file>img/放大镜.png</file>
+    <file>img/附件.png</file>
+    <file>img/垃圾箱_按下.png</file>
+    <file>img/垃圾箱_平时.png</file>
+    <file>img/收件箱.png</file>
+    <file>img/收件箱_按下.png</file>
+    <file>img/通讯录.png</file>
+    <file>img/通讯录_按下.png</file>
+    <file>img/头像.png</file>
+    <file>img/写邮件_按下.png</file>
+    <file>img/写邮件_平时.png</file>
+    <file>img/已发送_按下.png</file>
+    <file>img/已发送_平时.png</file>
   </qresource>
 </RCC>

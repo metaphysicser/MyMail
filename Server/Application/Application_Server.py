@@ -17,6 +17,7 @@ from Server.Log.Log import Logger
 from Server.Application.Message_handler import Message_handler
 
 CRLF = b'\r\n'
+Buffer = 1024  # 接收缓冲区长度
 
 logger = Logger("../Log/AppServer_history.log", logging.DEBUG, __name__).getlog()
 
@@ -37,8 +38,14 @@ class ThreadedAPPRequestHandler(socketserver.BaseRequestHandler):
         try:
             while True:
                 self.data = b""
-                self.data = self.request.recv(1024)
-                self.data = json.loads(self.data.decode()) # 接收客户端信息
+                temp_data = self.request.recv(Buffer)
+                self.data += temp_data
+                while len(temp_data) == Buffer:  # 用于接收分段文件并合并
+                    temp_data = self.request.recv(Buffer)
+                    self.data += temp_data
+                    if temp_data[-2:] == CRLF:  # 遇到停止符号结束接收
+                        break
+                self.data = json.loads(self.data[:-2].decode()) # 接收客户端信息
 
                 logger.info("ip {} 向APP服务器线程 {} 发送信息:".format(self.client_address[0], cur_thread.name) + str(self.data))
                 if not self.data:
@@ -46,8 +53,17 @@ class ThreadedAPPRequestHandler(socketserver.BaseRequestHandler):
                     break
 
                 message = handler.handle(self.data) # 处理客户端信息
-                message_bit = bytes(json.dumps(message), encoding="utf8")
-                self.request.send(message_bit) # 发送结果
+                print(message)
+                message_bit = bytes(json.dumps(message), encoding="utf8") + CRLF
+                self.request.send(message_bit)
+                # block = 0
+                # while True:
+                #     self.request.send(message_bit[block:block + Buffer].encode())
+                #     print(message_bit[block:block + Buffer])
+                #     if block > len(message_bit):
+                #         break
+                #     else:
+                #         block += Buffer
 
                 logger.info("服务器APP线程 {} 向 ip {} 发送信息:".format(cur_thread.name, self.client_address[0]) + str(message))
         except Exception as e:

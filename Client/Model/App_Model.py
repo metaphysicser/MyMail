@@ -8,6 +8,7 @@
 Attention：
 
 """
+import base64
 import json
 import random
 import sys
@@ -77,18 +78,83 @@ class App_Model:
         Returns:
 
         """
+        message = bytes(json.dumps(message), encoding="utf8")
         self.open(self.host, self.port)  # 打开链接
-        self.sock.send(message)   # 发送信息
+        self.sock.sendall(message+CRLF)  # 发送信息
         self.data = b""
-        while self.data == b"":
-            self.data = self.sock.recv(1024)  # 接收信息
-        self.data = json.loads(self.data.decode())
+        temp_data = self.sock.recv(1024)
+        self.data += temp_data
+        while len(temp_data) == 1024:  # 用于接收分段文件并合并
+            temp_data = self.sock.recv(1024)
+            self.data += temp_data
+            if temp_data[-2:] == CRLF:  # 遇到停止符号结束接收
+                break
+
+        self.data = json.loads(self.data[:-2].decode())  # 接收客户端信息
         self.sock.close()  # 关闭连接
         return self.data
+
+
+
+    def send_email(self, sender, receiver, sender_name, content, title, attachment = None):
+        """
+        发送电子邮件
+        发送的命令格式：
+        {
+                "action" : "send_email",
+                "content": {
+                  "sender" : sender,
+                  "sender_name": sender_name,
+                  "receiver" : receiver,
+                  "subject": subject,
+                  "text": text,
+                  "attachment": attachment
+                }
+        }
+        Args:
+            attachment: 字典： 附件名，附件的路径
+            sender: 发送者
+            receiver: 接受者
+            sender_name: 用户名
+            content: 内容
+            title: 主题
+
+
+        Returns:
+
+        """
+        message = {
+                "action" : "send_email",
+                "content": {
+                  "sender" : sender,
+                  "sender_name": sender_name,
+                  "receiver" : receiver,
+                  "subject": title,
+                  "text": content,
+                  "attachment": None
+                }
+        }
+        if attachment is not None:  # 将附件放入消息中
+            message["content"]["attachment"] = {}
+            for filename,filepath in attachment.items():
+                with open(filepath, 'rb') as f:
+                    file_byte = base64.b64encode(f.read())
+                file_str = file_byte.decode("ascii")
+                message["content"]["attachment"][filename] = file_str
+
+        rec = self.send_rec_msg(message)
+        return rec
 
     def login(self, username, password):
         """
         向服务器发送登陆命令
+        命令格式：
+        {"action": "login",
+                   "content": {
+                       "username": username,
+                       "password": password
+                    }
+                }
         Args:
             username: 用户名
             password: 密码
@@ -102,10 +168,10 @@ class App_Model:
                    "content": {
                        "username": username,
                        "password": password
-                    }
+                   }
                    }
         # 命令格式
-        message = bytes(json.dumps(message), encoding = "utf8")
+
         rec = self.send_rec_msg(message)
         return rec
 

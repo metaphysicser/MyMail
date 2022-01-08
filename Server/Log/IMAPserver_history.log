@@ -1,0 +1,10 @@
+2022-01-08 23:33:34,701 IMAP_Server.py <module> [line:82] INFO IMAP服务器开始工作，监听端口143
+2022-01-08 23:33:56,919 IMAP_Server.py setup [line:64] INFO 服务器线程Thread-2开启
+2022-01-08 23:33:56,919 IMAP_Server.py setup [line:66] INFO ip 127.0.0.1 向服务器线程 Thread-2 发送信息:* OK IMAP4rev1 server ready
+2022-01-08 23:34:37,094 IMAP_Server.py handle [line:47] INFO ip 127.0.0.1 向服务器线程 Thread-2 发送信息:C1a32fg3534 capability
+2022-01-08 23:34:37,095 IMAP_Server.py handle [line:55] INFO 服务器线程 Thread-2 向 ip 127.0.0.1 发送信息:* BAD Command!
+2022-01-08 23:35:08,316 IMAP_Server.py handle [line:47] INFO ip 127.0.0.1 向服务器线程 Thread-2 发送信息:[A[A[Ahfa  CAPABILITY
+2022-01-08 23:35:08,316 IMAP_Server.py handle [line:55] INFO 服务器线程 Thread-2 向 ip 127.0.0.1 发送信息:* BAD Command!
+2022-01-08 23:35:44,475 IMAP_Server.py handle [line:47] INFO ip 127.0.0.1 向服务器线程 Thread-2 发送信息:CWEW CAPABILITY
+2022-01-08 23:35:44,476 IMAP_Server.py handle [line:55] INFO 服务器线程 Thread-2 向 ip 127.0.0.1 发送信息:* CAPABILITY IMAP4rev1 AUTH=GSSAPI AUTH=PLAIN AUTH = LOGIN
+2022-01-08 23:35:44,476 IMAP_Server.py handle [line:55] INFO 服务器线程 Thread-2 向 ip 127.0.0.1 发送信息:CWEW OK CAPABILITY Completed

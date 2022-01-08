@@ -425,3 +425,300 @@
 2022-01-04 18:39:07,670 Application_Server.py handle [line:54] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
 2022-01-04 18:39:07,670 Application_Server.py handle [line:55] ERROR Expecting value: line 1 column 1 (char 0)
 2022-01-04 18:39:07,670 Application_Server.py finish [line:65] INFO APP服务器线程Thread-4关闭
+2022-01-08 00:25:11,813 Application_Server.py <module> [line:80] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:25:22,399 Application_Server.py setup [line:65] INFO 服务器线程Thread-2开启
+2022-01-08 00:25:35,524 Application_Server.py handle [line:58] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 00:25:35,524 Application_Server.py handle [line:59] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-08 00:25:35,526 Application_Server.py finish [line:69] INFO APP服务器线程Thread-2关闭
+2022-01-08 00:25:58,860 Application_Server.py <module> [line:80] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:26:02,810 Application_Server.py setup [line:65] INFO 服务器线程Thread-7开启
+2022-01-08 00:26:39,331 Application_Server.py <module> [line:80] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:26:44,363 Application_Server.py setup [line:65] INFO 服务器线程Thread-2开启
+2022-01-08 00:26:52,616 Application_Server.py <module> [line:80] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:26:55,392 Application_Server.py setup [line:65] INFO 服务器线程Thread-7开启
+2022-01-08 00:27:06,129 Application_Server.py <module> [line:80] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:27:09,380 Application_Server.py setup [line:65] INFO 服务器线程Thread-7开启
+2022-01-08 00:27:37,278 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:27:40,203 Application_Server.py setup [line:66] INFO 服务器线程Thread-2开启
+2022-01-08 00:27:58,788 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:28:02,027 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 00:28:33,001 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:28:35,894 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 00:32:24,052 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:32:27,491 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 00:32:27,491 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 00:32:27,491 Application_Server.py handle [line:61] ERROR [WinError 10038] 在一个非套接字上尝试了一个操作。
+2022-01-08 00:32:27,491 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 00:33:17,962 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:33:21,501 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-08 00:33:21,501 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 00:33:21,502 Application_Server.py handle [line:62] ERROR 'socket' object has no attribute 'start'
+2022-01-08 00:33:21,502 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-08 00:37:22,977 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:37:29,207 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 00:39:45,810 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:39:54,042 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 00:40:51,909 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:40:53,488 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 00:41:26,422 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:41:40,002 Application_Server.py setup [line:66] INFO 服务器线程Thread-2开启
+2022-01-08 00:41:50,921 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:41:54,291 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 00:51:50,684 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:51:54,466 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 00:52:43,483 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 00:52:48,431 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 00:53:06,808 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 00:53:06,808 Application_Server.py handle [line:61] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-08 00:53:06,808 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 00:53:17,283 Application_Server.py setup [line:67] INFO 服务器线程Thread-3开启
+2022-01-08 01:01:21,535 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:01:24,062 Application_Server.py setup [line:67] INFO 服务器线程Thread-7开启
+2022-01-08 01:02:50,073 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:02:53,288 Application_Server.py setup [line:66] INFO 服务器线程Thread-2开启
+2022-01-08 01:02:53,288 Application_Server.py handle [line:48] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:02:53,308 Application_Server.py handle [line:57] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:02:53,308 Application_Server.py handle [line:59] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:02:53,308 Application_Server.py handle [line:60] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-08 01:02:53,308 Application_Server.py finish [line:70] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:03:18,246 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:03:23,359 Application_Server.py setup [line:66] INFO 服务器线程Thread-2开启
+2022-01-08 01:03:36,568 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:03:38,924 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 01:03:48,311 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:03:52,529 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 01:04:04,905 Application_Server.py <module> [line:81] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:04:07,657 Application_Server.py setup [line:66] INFO 服务器线程Thread-7开启
+2022-01-08 01:06:55,880 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:07:00,499 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:10:13,578 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:10:18,224 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-08 01:10:33,138 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:10:36,199 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-08 01:10:36,200 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:10:36,209 Application_Server.py handle [line:59] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:10:36,210 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:10:36,210 Application_Server.py handle [line:62] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-08 01:10:36,210 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:11:26,578 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:11:29,760 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:11:29,760 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:11:29,770 Application_Server.py handle [line:58] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:11:29,770 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:11:29,770 Application_Server.py handle [line:61] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-08 01:11:29,770 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:13:37,994 Application_Server.py <module> [line:83] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:13:42,306 Application_Server.py setup [line:68] INFO 服务器线程Thread-2开启
+2022-01-08 01:13:42,307 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:13:42,315 Application_Server.py handle [line:59] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:13:42,315 Application_Server.py handle [line:61] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:13:42,316 Application_Server.py handle [line:62] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-08 01:13:42,316 Application_Server.py finish [line:72] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:15:58,674 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:16:03,648 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:16:03,648 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:16:03,656 Application_Server.py handle [line:58] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:16:08,169 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:16:08,169 Application_Server.py handle [line:61] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-08 01:16:08,169 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:16:15,851 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:16:20,001 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:16:20,001 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:16:20,029 Application_Server.py handle [line:58] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:17:09,167 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:17:12,089 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:17:12,090 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:17:12,098 Application_Server.py handle [line:58] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:17:14,312 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:17:14,313 Application_Server.py handle [line:61] ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2022-01-08 01:17:14,313 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:17:22,097 Application_Server.py setup [line:67] INFO 服务器线程Thread-3开启
+2022-01-08 01:17:22,098 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:17:22,114 Application_Server.py handle [line:58] INFO 服务器APP线程 Thread-3 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-08 01:18:23,343 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:18:27,474 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:18:27,474 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:18:27,494 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:18:27,494 Application_Server.py handle [line:61] ERROR 'socket' object has no attribute 'send_all'
+2022-01-08 01:18:27,494 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:18:38,967 Application_Server.py setup [line:67] INFO 服务器线程Thread-3开启
+2022-01-08 01:18:38,967 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:18:38,991 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-08 01:18:38,991 Application_Server.py handle [line:61] ERROR 'socket' object has no attribute 'send_all'
+2022-01-08 01:18:38,991 Application_Server.py finish [line:71] INFO APP服务器线程Thread-3关闭
+2022-01-08 01:19:01,768 Application_Server.py setup [line:67] INFO 服务器线程Thread-4开启
+2022-01-08 01:19:01,768 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-4 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:19:01,790 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-08 01:19:01,790 Application_Server.py handle [line:61] ERROR 'socket' object has no attribute 'send_all'
+2022-01-08 01:19:01,790 Application_Server.py finish [line:71] INFO APP服务器线程Thread-4关闭
+2022-01-08 01:20:00,577 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:20:04,544 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:20:04,544 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:20:04,551 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:20:04,552 Application_Server.py handle [line:61] ERROR 'socket' object has no attribute 'send_all'
+2022-01-08 01:20:04,552 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:21:03,745 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:21:24,443 Application_Server.py <module> [line:82] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:21:33,060 Application_Server.py setup [line:67] INFO 服务器线程Thread-2开启
+2022-01-08 01:21:33,060 Application_Server.py handle [line:49] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:21:33,068 Application_Server.py handle [line:60] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:21:33,068 Application_Server.py handle [line:61] ERROR 'socket' object has no attribute 'send_all'
+2022-01-08 01:21:33,068 Application_Server.py finish [line:71] INFO APP服务器线程Thread-2关闭
+2022-01-08 01:26:59,808 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 01:27:02,752 Application_Server.py setup [line:72] INFO 服务器线程Thread-2开启
+2022-01-08 01:27:02,752 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-08 01:27:02,762 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 01:27:02,762 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 01:27:02,762 Application_Server.py finish [line:76] INFO APP服务器线程Thread-2关闭
+2022-01-08 22:40:37,927 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 22:40:46,465 Application_Server.py setup [line:72] INFO 服务器线程Thread-2开启
+2022-01-08 22:40:46,465 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 22:40:46,506 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 22:40:46,506 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 22:40:46,506 Application_Server.py finish [line:76] INFO APP服务器线程Thread-2关闭
+2022-01-08 22:41:52,093 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 22:42:01,045 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 22:42:01,045 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 22:42:01,107 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 22:42:01,107 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 22:42:01,107 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 22:43:04,709 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:41:58,010 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:42:07,206 Application_Server.py setup [line:72] INFO 服务器线程Thread-2开启
+2022-01-08 23:42:07,206 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:42:07,243 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 23:42:07,244 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 23:42:07,244 Application_Server.py finish [line:76] INFO APP服务器线程Thread-2关闭
+2022-01-08 23:43:21,258 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:43:23,757 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:43:23,758 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:43:43,241 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:43:43,241 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 23:43:43,242 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:43:54,331 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:43:56,116 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:43:56,117 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:45:51,129 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:45:51,491 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:45:51,492 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:46:00,793 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:46:00,794 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 23:46:00,794 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:46:08,086 Application_Server.py setup [line:72] INFO 服务器线程Thread-28开启
+2022-01-08 23:46:08,087 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-28 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:46:27,390 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-28 链接断开
+2022-01-08 23:46:27,390 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 23:46:27,391 Application_Server.py finish [line:76] INFO APP服务器线程Thread-28关闭
+2022-01-08 23:46:53,288 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:46:59,940 Application_Server.py setup [line:72] INFO 服务器线程Thread-2开启
+2022-01-08 23:46:59,940 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:46:59,992 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 23:46:59,992 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 23:46:59,993 Application_Server.py finish [line:76] INFO APP服务器线程Thread-2关闭
+2022-01-08 23:47:16,664 Application_Server.py setup [line:72] INFO 服务器线程Thread-3开启
+2022-01-08 23:47:16,665 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:47:16,715 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-08 23:47:16,715 Application_Server.py handle [line:66] ERROR tuple index out of range
+2022-01-08 23:47:16,715 Application_Server.py finish [line:76] INFO APP服务器线程Thread-3关闭
+2022-01-08 23:47:28,435 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:47:30,281 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:47:30,282 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:49:09,723 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:49:11,797 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:49:11,798 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:49:21,864 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:49:21,864 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:49:21,864 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:49:57,995 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:50:00,248 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:50:00,249 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:50:10,435 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:50:10,435 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:50:10,435 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:51:50,801 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:51:52,922 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:51:52,923 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:52:03,751 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:52:03,751 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:52:03,751 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:53:06,978 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:53:10,033 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:53:10,034 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:53:19,798 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:53:19,799 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:53:19,799 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:53:38,910 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:53:40,182 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:53:40,184 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:53:52,306 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:53:52,306 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:53:52,306 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:55:25,007 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:55:27,353 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:55:27,354 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:56:34,340 Application_Server.py <module> [line:87] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:56:36,077 Application_Server.py setup [line:72] INFO 服务器线程Thread-7开启
+2022-01-08 23:56:36,078 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:56:40,983 Application_Server.py handle [line:65] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-08 23:56:40,984 Application_Server.py handle [line:66] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:56:40,984 Application_Server.py finish [line:76] INFO APP服务器线程Thread-7关闭
+2022-01-08 23:57:27,296 Application_Server.py <module> [line:88] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:57:29,950 Application_Server.py setup [line:73] INFO 服务器线程Thread-2开启
+2022-01-08 23:57:29,950 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:57:29,999 Application_Server.py handle [line:66] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 23:57:29,999 Application_Server.py handle [line:67] ERROR slice indices must be integers or None or have an __index__ method
+2022-01-08 23:57:29,999 Application_Server.py finish [line:77] INFO APP服务器线程Thread-2关闭
+2022-01-08 23:58:50,895 Application_Server.py <module> [line:88] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:58:53,857 Application_Server.py setup [line:73] INFO 服务器线程Thread-2开启
+2022-01-08 23:58:53,857 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-08 23:58:53,914 Application_Server.py handle [line:66] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-08 23:58:53,914 Application_Server.py handle [line:67] ERROR local variable 'len_per' referenced before assignment
+2022-01-08 23:58:53,914 Application_Server.py finish [line:77] INFO APP服务器线程Thread-2关闭
+2022-01-08 23:59:51,214 Application_Server.py <module> [line:89] INFO APP服务器开始工作，监听端口53831
+2022-01-08 23:59:54,636 Application_Server.py setup [line:74] INFO 服务器线程Thread-2开启
+2022-01-08 23:59:54,636 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:01:14,203 Application_Server.py <module> [line:89] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:01:16,903 Application_Server.py setup [line:74] INFO 服务器线程Thread-2开启
+2022-01-09 00:01:16,903 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:02:16,365 Application_Server.py <module> [line:90] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:02:19,037 Application_Server.py setup [line:75] INFO 服务器线程Thread-2开启
+2022-01-09 00:02:19,037 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:02:19,080 Application_Server.py handle [line:66] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'send_mail_response', 'content': {'status': 'False', 'reason': '发送失败'}}
+2022-01-09 00:04:20,397 Application_Server.py <module> [line:90] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:04:24,174 Application_Server.py setup [line:75] INFO 服务器线程Thread-2开启
+2022-01-09 00:04:24,175 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:04:24,216 Application_Server.py handle [line:68] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 00:04:24,216 Application_Server.py handle [line:69] ERROR local variable 'len_per' referenced before assignment
+2022-01-09 00:04:24,216 Application_Server.py finish [line:79] INFO APP服务器线程Thread-2关闭
+2022-01-09 00:06:32,765 Application_Server.py <module> [line:92] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:06:34,444 Application_Server.py setup [line:77] INFO 服务器线程Thread-2开启
+2022-01-09 00:06:34,444 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:06:34,491 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 00:06:34,491 Application_Server.py handle [line:71] ERROR 'bytes' object has no attribute 'encode'
+2022-01-09 00:06:34,491 Application_Server.py finish [line:81] INFO APP服务器线程Thread-2关闭
+2022-01-09 00:07:07,339 Application_Server.py <module> [line:93] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:07:09,192 Application_Server.py setup [line:78] INFO 服务器线程Thread-2开启
+2022-01-09 00:07:09,192 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:07:09,234 Application_Server.py handle [line:71] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 00:07:09,234 Application_Server.py handle [line:72] ERROR 'bytes' object has no attribute 'encode'
+2022-01-09 00:07:09,234 Application_Server.py finish [line:82] INFO APP服务器线程Thread-2关闭
+2022-01-09 00:09:31,891 Application_Server.py <module> [line:93] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:09:34,025 Application_Server.py setup [line:78] INFO 服务器线程Thread-2开启
+2022-01-09 00:09:34,025 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:09:34,069 Application_Server.py handle [line:69] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'send_mail_response', 'content': {'status': 'False', 'reason': '发送失败'}}
+2022-01-09 00:09:34,070 Application_Server.py handle [line:71] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 00:09:34,070 Application_Server.py handle [line:72] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 00:09:34,070 Application_Server.py finish [line:82] INFO APP服务器线程Thread-2关闭
+2022-01-09 00:12:10,787 Application_Server.py <module> [line:93] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:12:16,555 Application_Server.py setup [line:78] INFO 服务器线程Thread-2开启
+2022-01-09 00:12:16,555 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:12:16,654 Application_Server.py handle [line:71] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 00:12:16,654 Application_Server.py handle [line:72] ERROR __init__() missing 1 required positional argument: 'worker_id'
+2022-01-09 00:12:16,654 Application_Server.py finish [line:82] INFO APP服务器线程Thread-2关闭
+2022-01-09 00:13:26,273 Application_Server.py <module> [line:93] INFO APP服务器开始工作，监听端口53831
+2022-01-09 00:13:28,408 Application_Server.py setup [line:78] INFO 服务器线程Thread-2开启
+2022-01-09 00:13:28,408 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'send_email', 'content': {'sender': 'zpl010720@qq.com', 'sender_name': 'test', 'receiver': 'zpl010720@qq.com', 'subject': 'test', 'text': 'test', 'attachment': None}}
+2022-01-09 00:13:30,107 Application_Server.py handle [line:69] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'send_mail_response', 'content': {'status': 'True', 'reason': '发送成功'}}
+2022-01-09 00:13:30,107 Application_Server.py handle [line:71] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 00:13:30,107 Application_Server.py handle [line:72] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 00:13:30,107 Application_Server.py finish [line:82] INFO APP服务器线程Thread-2关闭

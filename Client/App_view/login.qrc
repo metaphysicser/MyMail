@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="background">
+    <file>img/登陆背景图.png</file>
+  </qresource>
+</RCC>

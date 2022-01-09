@@ -66,9 +66,6 @@
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
-           <property name="handleWidth">
-            <number>0</number>
-           </property>
            <widget class="QSplitter" name="splitter_3">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -155,7 +152,7 @@ border:none;</string>
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>502</width>
+                <width>471</width>
                 <height>96</height>
                </rect>
               </property>
@@ -220,13 +217,13 @@ border:none;</string>
            <widget class="QScrollArea" name="scrollArea_6">
             <property name="minimumSize">
              <size>
-              <width>206</width>
+              <width>231</width>
               <height>96</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>206</width>
+              <width>231</width>
               <height>96</height>
              </size>
             </property>
@@ -242,14 +239,14 @@ border:none;</string>
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>206</width>
+               <width>231</width>
                <height>96</height>
               </rect>
              </property>
              <widget class="QLabel" name="label_3">
               <property name="geometry">
                <rect>
-                <x>10</x>
+                <x>20</x>
                 <y>20</y>
                 <width>51</width>
                 <height>51</height>
@@ -274,14 +271,86 @@ border:none;</string>
              <widget class="QLabel" name="label_4">
               <property name="geometry">
                <rect>
-                <x>90</x>
+                <x>80</x>
                 <y>30</y>
                 <width>72</width>
                 <height>15</height>
                </rect>
               </property>
+              <property name="font">
+               <font>
+                <family>微软雅黑</family>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
               <property name="text">
                <string>用户名</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comboBox">
+              <property name="geometry">
+               <rect>
+                <x>76</x>
+                <y>50</y>
+                <width>151</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>微软雅黑</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="currentText">
+               <string notr="true"/>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>30</y>
+                <width>52</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>微软雅黑</family>
+                <pointsize>9</pointsize>
+                <weight>9</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+    background-color: rgb(10, 2, 255);
+	color: rgb(255, 255, 255);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 10px;
+    border-color: rgb(2, 194, 18);
+    min-width: 2em;
+    padding: 0px;    
+	font: 75 9pt &quot;微软雅黑&quot;;
+}
+
+QPushButton:pressed{
+color: rgb(10, 2, 255);
+background-color: rgb(255, 255, 255);
+
+}</string>
+              </property>
+              <property name="text">
+               <string>添加</string>
               </property>
              </widget>
             </widget>
@@ -336,6 +405,132 @@ border:none;</string>
                 <height>247</height>
                </rect>
               </property>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>10</y>
+                 <width>161</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+    background-color: rgb(10, 2, 255);
+	color: rgb(255, 255, 255);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 30px;
+    border-color: rgb(2, 194, 18);
+	
+
+
+}
+
+QPushButton:focus{
+color: rgb(10, 2, 255);
+background-color: rgb(255, 255, 255);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>   写邮件</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/newPrefix/img/写邮件_平时.png</normaloff>:/newPrefix/img/写邮件_平时.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>90</y>
+                 <width>221</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:focus{
+color: rgb(255, 255, 255);
+background-color: rgb(220, 0, 0);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>   收件箱</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/newPrefix/img/收件箱.png</normaloff>:/newPrefix/img/收件箱.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>160</y>
+                 <width>221</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:focus{
+color: rgb(255, 255, 255);
+background-color: rgb(235, 235, 0);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>   通讯录</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/newPrefix/img/通讯录.png</normaloff>:/newPrefix/img/通讯录.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
              </widget>
             </widget>
             <widget class="QScrollArea" name="scrollArea_4">
@@ -367,6 +562,120 @@ border:none;</string>
                 <height>247</height>
                </rect>
               </property>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>20</y>
+                 <width>221</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>16</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:focus{
+color: rgb(255, 255, 255);
+background-color:rgb(0, 170, 255);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>  已发送</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/newPrefix/img/已发送_平时.png</normaloff>:/newPrefix/img/已发送_平时.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>80</y>
+                 <width>221</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>16</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:focus{
+color: rgb(255, 255, 255);
+background-color:rgb(0, 170, 255);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>  垃圾箱</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/newPrefix/img/垃圾箱_平时.png</normaloff>:/newPrefix/img/垃圾箱_平时.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>140</y>
+                 <width>221</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>16</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:focus{
+color: rgb(255, 255, 255);
+background-color:rgb(0, 170, 255);
+
+}</string>
+               </property>
+               <property name="text">
+                <string>  草稿箱</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/newPrefix/img/草稿箱_平时.png</normaloff>:/newPrefix/img/草稿箱_平时.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
              </widget>
             </widget>
            </widget>
@@ -394,6 +703,7 @@ border:none;</string>
  </widget>
  <resources>
   <include location="../resource.qrc"/>
+  <include location="C:/Users/zpl01/.designer/resource.qrc"/>
  </resources>
  <connections/>
 </ui>

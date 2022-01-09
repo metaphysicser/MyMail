@@ -722,3 +722,372 @@
 2022-01-09 00:13:30,107 Application_Server.py handle [line:71] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
 2022-01-09 00:13:30,107 Application_Server.py handle [line:72] ERROR Expecting value: line 1 column 1 (char 0)
 2022-01-09 00:13:30,107 Application_Server.py finish [line:82] INFO APP服务器线程Thread-2关闭
+2022-01-09 03:06:43,775 Application_Server.py <module> [line:92] INFO APP服务器开始工作，监听端口53831
+2022-01-09 03:06:45,776 Application_Server.py setup [line:77] INFO 服务器线程Thread-2开启
+2022-01-09 03:06:45,777 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-09 03:06:45,788 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 03:06:45,788 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 03:06:45,788 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:06:45,788 Application_Server.py finish [line:81] INFO APP服务器线程Thread-2关闭
+2022-01-09 03:06:59,009 Application_Server.py setup [line:77] INFO 服务器线程Thread-3开启
+2022-01-09 03:06:59,009 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '124'}}
+2022-01-09 03:06:59,299 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-3 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '密码不正确'}}
+2022-01-09 03:06:59,301 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-09 03:06:59,301 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:06:59,301 Application_Server.py finish [line:81] INFO APP服务器线程Thread-3关闭
+2022-01-09 03:07:07,186 Application_Server.py setup [line:77] INFO 服务器线程Thread-4开启
+2022-01-09 03:07:07,186 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-4 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '12'}}
+2022-01-09 03:07:07,464 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-4 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '密码不正确'}}
+2022-01-09 03:07:07,465 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-09 03:07:07,465 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:07:07,465 Application_Server.py finish [line:81] INFO APP服务器线程Thread-4关闭
+2022-01-09 03:07:11,801 Application_Server.py setup [line:77] INFO 服务器线程Thread-5开启
+2022-01-09 03:07:11,801 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-5 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '123'}}
+2022-01-09 03:07:12,087 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-5 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '密码不正确'}}
+2022-01-09 03:07:12,087 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-5 链接断开
+2022-01-09 03:07:12,087 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:07:12,087 Application_Server.py finish [line:81] INFO APP服务器线程Thread-5关闭
+2022-01-09 03:07:29,591 Application_Server.py setup [line:77] INFO 服务器线程Thread-6开启
+2022-01-09 03:07:29,592 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-6 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:07:29,881 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-6 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:07:29,881 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-6 链接断开
+2022-01-09 03:07:29,881 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:07:29,881 Application_Server.py finish [line:81] INFO APP服务器线程Thread-6关闭
+2022-01-09 03:11:52,109 Application_Server.py <module> [line:92] INFO APP服务器开始工作，监听端口53831
+2022-01-09 03:12:23,126 Application_Server.py setup [line:77] INFO 服务器线程Thread-2开启
+2022-01-09 03:12:23,126 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:12:23,404 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:12:23,405 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 03:12:23,405 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:12:23,405 Application_Server.py finish [line:81] INFO APP服务器线程Thread-2关闭
+2022-01-09 03:19:18,308 Application_Server.py <module> [line:92] INFO APP服务器开始工作，监听端口53831
+2022-01-09 03:19:29,207 Application_Server.py setup [line:77] INFO 服务器线程Thread-2开启
+2022-01-09 03:19:29,207 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-2 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:19:29,481 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-2 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:19:29,481 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-2 链接断开
+2022-01-09 03:19:29,481 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:19:29,482 Application_Server.py finish [line:81] INFO APP服务器线程Thread-2关闭
+2022-01-09 03:24:07,417 Application_Server.py setup [line:77] INFO 服务器线程Thread-3开启
+2022-01-09 03:24:07,418 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-3 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:24:07,730 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-3 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:24:07,730 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-3 链接断开
+2022-01-09 03:24:07,731 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:24:07,731 Application_Server.py finish [line:81] INFO APP服务器线程Thread-3关闭
+2022-01-09 03:25:35,235 Application_Server.py setup [line:77] INFO 服务器线程Thread-4开启
+2022-01-09 03:25:35,235 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-4 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-09 03:25:35,260 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-4 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 03:25:35,260 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-4 链接断开
+2022-01-09 03:25:35,260 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:25:35,261 Application_Server.py finish [line:81] INFO APP服务器线程Thread-4关闭
+2022-01-09 03:25:40,908 Application_Server.py setup [line:77] INFO 服务器线程Thread-5开启
+2022-01-09 03:25:40,908 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-5 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:25:41,204 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-5 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:25:41,204 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-5 链接断开
+2022-01-09 03:25:41,204 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:25:41,204 Application_Server.py finish [line:81] INFO APP服务器线程Thread-5关闭
+2022-01-09 03:42:35,621 Application_Server.py setup [line:77] INFO 服务器线程Thread-6开启
+2022-01-09 03:42:35,622 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-6 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:42:35,900 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-6 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:42:35,900 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-6 链接断开
+2022-01-09 03:42:35,900 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:42:35,900 Application_Server.py finish [line:81] INFO APP服务器线程Thread-6关闭
+2022-01-09 03:42:51,605 Application_Server.py setup [line:77] INFO 服务器线程Thread-7开启
+2022-01-09 03:42:51,605 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-7 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:42:51,880 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-7 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:42:51,881 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-7 链接断开
+2022-01-09 03:42:51,881 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:42:51,881 Application_Server.py finish [line:81] INFO APP服务器线程Thread-7关闭
+2022-01-09 03:48:56,313 Application_Server.py setup [line:77] INFO 服务器线程Thread-8开启
+2022-01-09 03:48:56,313 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-8 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:48:56,579 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-8 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:48:56,579 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-8 链接断开
+2022-01-09 03:48:56,580 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:48:56,580 Application_Server.py finish [line:81] INFO APP服务器线程Thread-8关闭
+2022-01-09 03:49:09,358 Application_Server.py setup [line:77] INFO 服务器线程Thread-9开启
+2022-01-09 03:49:09,359 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-9 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:49:09,650 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-9 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:49:09,651 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-9 链接断开
+2022-01-09 03:49:09,651 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:49:09,651 Application_Server.py finish [line:81] INFO APP服务器线程Thread-9关闭
+2022-01-09 03:49:54,410 Application_Server.py setup [line:77] INFO 服务器线程Thread-10开启
+2022-01-09 03:49:54,410 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-10 发送信息:{'action': 'login', 'content': {'username': '123', 'password': '125'}}
+2022-01-09 03:49:54,428 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-10 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 03:49:54,428 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-10 链接断开
+2022-01-09 03:49:54,428 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:49:54,428 Application_Server.py finish [line:81] INFO APP服务器线程Thread-10关闭
+2022-01-09 03:49:59,298 Application_Server.py setup [line:77] INFO 服务器线程Thread-11开启
+2022-01-09 03:49:59,298 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-11 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:49:59,583 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-11 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:49:59,583 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-11 链接断开
+2022-01-09 03:49:59,584 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:49:59,584 Application_Server.py finish [line:81] INFO APP服务器线程Thread-11关闭
+2022-01-09 03:51:24,793 Application_Server.py setup [line:77] INFO 服务器线程Thread-12开启
+2022-01-09 03:51:24,793 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-12 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:51:25,074 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-12 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:51:25,074 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-12 链接断开
+2022-01-09 03:51:25,074 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:51:25,074 Application_Server.py finish [line:81] INFO APP服务器线程Thread-12关闭
+2022-01-09 03:52:14,732 Application_Server.py setup [line:77] INFO 服务器线程Thread-13开启
+2022-01-09 03:52:14,732 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-13 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:52:14,998 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-13 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:52:14,998 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-13 链接断开
+2022-01-09 03:52:14,998 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:52:14,998 Application_Server.py finish [line:81] INFO APP服务器线程Thread-13关闭
+2022-01-09 03:53:23,186 Application_Server.py setup [line:77] INFO 服务器线程Thread-14开启
+2022-01-09 03:53:23,186 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-14 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:53:23,476 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-14 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:53:23,476 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-14 链接断开
+2022-01-09 03:53:23,476 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:53:23,476 Application_Server.py finish [line:81] INFO APP服务器线程Thread-14关闭
+2022-01-09 03:53:41,364 Application_Server.py setup [line:77] INFO 服务器线程Thread-15开启
+2022-01-09 03:53:41,364 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-15 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:53:41,654 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-15 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:53:41,655 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-15 链接断开
+2022-01-09 03:53:41,655 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:53:41,655 Application_Server.py finish [line:81] INFO APP服务器线程Thread-15关闭
+2022-01-09 03:54:34,195 Application_Server.py setup [line:77] INFO 服务器线程Thread-16开启
+2022-01-09 03:54:34,195 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-16 发送信息:{'action': 'login', 'content': {'username': '123', 'password': '125'}}
+2022-01-09 03:54:34,219 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-16 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 03:54:34,220 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-16 链接断开
+2022-01-09 03:54:34,220 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:54:34,220 Application_Server.py finish [line:81] INFO APP服务器线程Thread-16关闭
+2022-01-09 03:54:37,786 Application_Server.py setup [line:77] INFO 服务器线程Thread-17开启
+2022-01-09 03:54:37,787 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-17 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:54:38,081 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-17 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:54:38,082 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-17 链接断开
+2022-01-09 03:54:38,082 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:54:38,082 Application_Server.py finish [line:81] INFO APP服务器线程Thread-17关闭
+2022-01-09 03:55:12,693 Application_Server.py setup [line:77] INFO 服务器线程Thread-18开启
+2022-01-09 03:55:12,693 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-18 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:55:12,986 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-18 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:55:12,986 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-18 链接断开
+2022-01-09 03:55:12,986 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:55:12,986 Application_Server.py finish [line:81] INFO APP服务器线程Thread-18关闭
+2022-01-09 03:55:53,474 Application_Server.py setup [line:77] INFO 服务器线程Thread-19开启
+2022-01-09 03:55:53,474 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-19 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 03:55:53,771 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-19 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 03:55:53,771 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-19 链接断开
+2022-01-09 03:55:53,771 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 03:55:53,771 Application_Server.py finish [line:81] INFO APP服务器线程Thread-19关闭
+2022-01-09 04:14:12,502 Application_Server.py setup [line:77] INFO 服务器线程Thread-20开启
+2022-01-09 04:14:12,503 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-20 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:14:12,782 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-20 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:14:12,782 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-20 链接断开
+2022-01-09 04:14:12,782 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:14:12,782 Application_Server.py finish [line:81] INFO APP服务器线程Thread-20关闭
+2022-01-09 04:15:26,360 Application_Server.py setup [line:77] INFO 服务器线程Thread-21开启
+2022-01-09 04:15:26,360 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-21 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:15:26,650 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-21 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:15:26,650 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-21 链接断开
+2022-01-09 04:15:26,650 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:15:26,650 Application_Server.py finish [line:81] INFO APP服务器线程Thread-21关闭
+2022-01-09 04:21:39,814 Application_Server.py setup [line:77] INFO 服务器线程Thread-22开启
+2022-01-09 04:21:39,814 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-22 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:21:40,102 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-22 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:21:40,102 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-22 链接断开
+2022-01-09 04:21:40,102 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:21:40,102 Application_Server.py finish [line:81] INFO APP服务器线程Thread-22关闭
+2022-01-09 04:21:53,266 Application_Server.py setup [line:77] INFO 服务器线程Thread-23开启
+2022-01-09 04:21:53,266 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-23 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:21:53,520 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-23 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:21:53,520 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-23 链接断开
+2022-01-09 04:21:53,520 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:21:53,520 Application_Server.py finish [line:81] INFO APP服务器线程Thread-23关闭
+2022-01-09 04:22:17,348 Application_Server.py setup [line:77] INFO 服务器线程Thread-24开启
+2022-01-09 04:22:17,348 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-24 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:22:17,644 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-24 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:22:17,645 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-24 链接断开
+2022-01-09 04:22:17,645 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:22:17,645 Application_Server.py finish [line:81] INFO APP服务器线程Thread-24关闭
+2022-01-09 04:23:07,287 Application_Server.py setup [line:77] INFO 服务器线程Thread-25开启
+2022-01-09 04:23:07,287 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-25 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:23:07,591 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-25 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:23:07,592 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-25 链接断开
+2022-01-09 04:23:07,592 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:23:07,592 Application_Server.py finish [line:81] INFO APP服务器线程Thread-25关闭
+2022-01-09 04:23:51,320 Application_Server.py setup [line:77] INFO 服务器线程Thread-26开启
+2022-01-09 04:23:51,320 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-26 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:23:51,607 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-26 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:23:51,607 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-26 链接断开
+2022-01-09 04:23:51,607 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:23:51,607 Application_Server.py finish [line:81] INFO APP服务器线程Thread-26关闭
+2022-01-09 04:33:07,475 Application_Server.py setup [line:77] INFO 服务器线程Thread-27开启
+2022-01-09 04:33:07,476 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-27 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:33:07,742 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-27 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:33:07,742 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-27 链接断开
+2022-01-09 04:33:07,742 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:33:07,742 Application_Server.py finish [line:81] INFO APP服务器线程Thread-27关闭
+2022-01-09 04:34:02,949 Application_Server.py setup [line:77] INFO 服务器线程Thread-28开启
+2022-01-09 04:34:02,949 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-28 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:34:03,262 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-28 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:34:03,262 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-28 链接断开
+2022-01-09 04:34:03,263 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:34:03,263 Application_Server.py finish [line:81] INFO APP服务器线程Thread-28关闭
+2022-01-09 04:34:43,009 Application_Server.py setup [line:77] INFO 服务器线程Thread-29开启
+2022-01-09 04:34:43,009 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-29 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:34:43,302 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-29 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:34:43,302 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-29 链接断开
+2022-01-09 04:34:43,303 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:34:43,303 Application_Server.py finish [line:81] INFO APP服务器线程Thread-29关闭
+2022-01-09 04:35:07,432 Application_Server.py setup [line:77] INFO 服务器线程Thread-30开启
+2022-01-09 04:35:07,432 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-30 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:35:07,721 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-30 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:35:07,721 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-30 链接断开
+2022-01-09 04:35:07,721 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:35:07,722 Application_Server.py finish [line:81] INFO APP服务器线程Thread-30关闭
+2022-01-09 04:35:44,249 Application_Server.py setup [line:77] INFO 服务器线程Thread-31开启
+2022-01-09 04:35:44,249 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-31 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:35:44,547 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-31 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:35:44,547 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-31 链接断开
+2022-01-09 04:35:44,547 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:35:44,547 Application_Server.py finish [line:81] INFO APP服务器线程Thread-31关闭
+2022-01-09 04:39:12,507 Application_Server.py setup [line:77] INFO 服务器线程Thread-32开启
+2022-01-09 04:39:12,507 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-32 发送信息:{'action': 'login', 'content': {'username': '1241', 'password': '125'}}
+2022-01-09 04:39:12,529 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-32 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 04:39:12,530 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-32 链接断开
+2022-01-09 04:39:12,530 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:39:12,530 Application_Server.py finish [line:81] INFO APP服务器线程Thread-32关闭
+2022-01-09 04:39:15,507 Application_Server.py setup [line:77] INFO 服务器线程Thread-33开启
+2022-01-09 04:39:15,507 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-33 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:39:15,803 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-33 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:39:15,803 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-33 链接断开
+2022-01-09 04:39:15,803 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:39:15,803 Application_Server.py finish [line:81] INFO APP服务器线程Thread-33关闭
+2022-01-09 04:39:47,267 Application_Server.py setup [line:77] INFO 服务器线程Thread-34开启
+2022-01-09 04:39:47,267 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-34 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:39:47,561 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-34 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:39:47,562 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-34 链接断开
+2022-01-09 04:39:47,562 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:39:47,562 Application_Server.py finish [line:81] INFO APP服务器线程Thread-34关闭
+2022-01-09 04:40:22,578 Application_Server.py setup [line:77] INFO 服务器线程Thread-35开启
+2022-01-09 04:40:22,578 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-35 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:40:22,874 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-35 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:40:22,875 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-35 链接断开
+2022-01-09 04:40:22,875 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:40:22,875 Application_Server.py finish [line:81] INFO APP服务器线程Thread-35关闭
+2022-01-09 04:41:00,349 Application_Server.py setup [line:77] INFO 服务器线程Thread-36开启
+2022-01-09 04:41:00,349 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-36 发送信息:{'action': 'login', 'content': {'username': '1241', 'password': '125'}}
+2022-01-09 04:41:00,367 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-36 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 04:41:00,367 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-36 链接断开
+2022-01-09 04:41:00,367 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:41:00,367 Application_Server.py finish [line:81] INFO APP服务器线程Thread-36关闭
+2022-01-09 04:41:03,152 Application_Server.py setup [line:77] INFO 服务器线程Thread-37开启
+2022-01-09 04:41:03,153 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-37 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 04:41:03,446 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-37 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 04:41:03,446 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-37 链接断开
+2022-01-09 04:41:03,446 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 04:41:03,446 Application_Server.py finish [line:81] INFO APP服务器线程Thread-37关闭
+2022-01-09 16:35:44,670 Application_Server.py setup [line:77] INFO 服务器线程Thread-38开启
+2022-01-09 16:35:44,670 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-38 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:35:44,954 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-38 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:35:44,954 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-38 链接断开
+2022-01-09 16:35:44,954 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:35:44,954 Application_Server.py finish [line:81] INFO APP服务器线程Thread-38关闭
+2022-01-09 16:37:12,393 Application_Server.py setup [line:77] INFO 服务器线程Thread-39开启
+2022-01-09 16:37:12,394 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-39 发送信息:{'action': 'login', 'content': {'username': '', 'password': ''}}
+2022-01-09 16:37:12,410 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-39 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'False', 'reason': '账号不存在'}}
+2022-01-09 16:37:12,410 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-39 链接断开
+2022-01-09 16:37:12,410 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:37:12,410 Application_Server.py finish [line:81] INFO APP服务器线程Thread-39关闭
+2022-01-09 16:37:17,957 Application_Server.py setup [line:77] INFO 服务器线程Thread-40开启
+2022-01-09 16:37:17,958 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-40 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:37:18,242 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-40 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:37:18,242 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-40 链接断开
+2022-01-09 16:37:18,242 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:37:18,242 Application_Server.py finish [line:81] INFO APP服务器线程Thread-40关闭
+2022-01-09 16:37:42,579 Application_Server.py setup [line:77] INFO 服务器线程Thread-41开启
+2022-01-09 16:37:42,580 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-41 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:37:42,883 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-41 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:37:42,883 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-41 链接断开
+2022-01-09 16:37:42,883 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:37:42,884 Application_Server.py finish [line:81] INFO APP服务器线程Thread-41关闭
+2022-01-09 16:38:28,685 Application_Server.py setup [line:77] INFO 服务器线程Thread-42开启
+2022-01-09 16:38:28,685 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-42 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:38:28,960 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-42 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:38:28,961 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-42 链接断开
+2022-01-09 16:38:28,961 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:38:28,961 Application_Server.py finish [line:81] INFO APP服务器线程Thread-42关闭
+2022-01-09 16:40:33,305 Application_Server.py setup [line:77] INFO 服务器线程Thread-43开启
+2022-01-09 16:40:33,305 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-43 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:40:33,590 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-43 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:40:33,590 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-43 链接断开
+2022-01-09 16:40:33,590 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:40:33,590 Application_Server.py finish [line:81] INFO APP服务器线程Thread-43关闭
+2022-01-09 16:41:19,525 Application_Server.py setup [line:77] INFO 服务器线程Thread-44开启
+2022-01-09 16:41:19,525 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-44 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:41:19,816 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-44 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:41:19,816 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-44 链接断开
+2022-01-09 16:41:19,816 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:41:19,817 Application_Server.py finish [line:81] INFO APP服务器线程Thread-44关闭
+2022-01-09 16:45:11,956 Application_Server.py setup [line:77] INFO 服务器线程Thread-45开启
+2022-01-09 16:45:11,956 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-45 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:45:12,269 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-45 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:45:12,269 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-45 链接断开
+2022-01-09 16:45:12,269 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:45:12,269 Application_Server.py finish [line:81] INFO APP服务器线程Thread-45关闭
+2022-01-09 16:45:39,267 Application_Server.py setup [line:77] INFO 服务器线程Thread-46开启
+2022-01-09 16:45:39,267 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-46 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:45:39,558 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-46 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:45:39,558 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-46 链接断开
+2022-01-09 16:45:39,559 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:45:39,559 Application_Server.py finish [line:81] INFO APP服务器线程Thread-46关闭
+2022-01-09 16:46:13,474 Application_Server.py setup [line:77] INFO 服务器线程Thread-47开启
+2022-01-09 16:46:13,474 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-47 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:46:13,787 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-47 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:46:13,788 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-47 链接断开
+2022-01-09 16:46:13,788 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:46:13,788 Application_Server.py finish [line:81] INFO APP服务器线程Thread-47关闭
+2022-01-09 16:47:04,395 Application_Server.py setup [line:77] INFO 服务器线程Thread-48开启
+2022-01-09 16:47:04,395 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-48 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 16:47:04,693 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-48 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 16:47:04,693 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-48 链接断开
+2022-01-09 16:47:04,693 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 16:47:04,693 Application_Server.py finish [line:81] INFO APP服务器线程Thread-48关闭
+2022-01-09 18:20:33,767 Application_Server.py setup [line:77] INFO 服务器线程Thread-49开启
+2022-01-09 18:20:33,768 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-49 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:20:34,049 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-49 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:20:34,049 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-49 链接断开
+2022-01-09 18:20:34,049 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:20:34,049 Application_Server.py finish [line:81] INFO APP服务器线程Thread-49关闭
+2022-01-09 18:22:56,502 Application_Server.py setup [line:77] INFO 服务器线程Thread-50开启
+2022-01-09 18:22:56,502 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-50 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:22:56,789 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-50 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:22:56,790 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-50 链接断开
+2022-01-09 18:22:56,790 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:22:56,790 Application_Server.py finish [line:81] INFO APP服务器线程Thread-50关闭
+2022-01-09 18:25:00,543 Application_Server.py setup [line:77] INFO 服务器线程Thread-51开启
+2022-01-09 18:25:00,543 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-51 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:25:00,834 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-51 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:25:00,834 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-51 链接断开
+2022-01-09 18:25:00,834 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:25:00,834 Application_Server.py finish [line:81] INFO APP服务器线程Thread-51关闭
+2022-01-09 18:25:37,052 Application_Server.py setup [line:77] INFO 服务器线程Thread-52开启
+2022-01-09 18:25:37,053 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-52 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:25:37,359 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-52 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:25:37,359 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-52 链接断开
+2022-01-09 18:25:37,359 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:25:37,360 Application_Server.py finish [line:81] INFO APP服务器线程Thread-52关闭
+2022-01-09 18:27:59,194 Application_Server.py setup [line:77] INFO 服务器线程Thread-53开启
+2022-01-09 18:27:59,194 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-53 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:27:59,489 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-53 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:27:59,489 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-53 链接断开
+2022-01-09 18:27:59,489 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:27:59,490 Application_Server.py finish [line:81] INFO APP服务器线程Thread-53关闭
+2022-01-09 18:28:38,392 Application_Server.py setup [line:77] INFO 服务器线程Thread-54开启
+2022-01-09 18:28:38,392 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-54 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:28:38,707 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-54 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:28:38,707 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-54 链接断开
+2022-01-09 18:28:38,707 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:28:38,707 Application_Server.py finish [line:81] INFO APP服务器线程Thread-54关闭
+2022-01-09 18:29:01,542 Application_Server.py setup [line:77] INFO 服务器线程Thread-55开启
+2022-01-09 18:29:01,542 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-55 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:29:01,819 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-55 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:29:01,819 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-55 链接断开
+2022-01-09 18:29:01,819 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:29:01,819 Application_Server.py finish [line:81] INFO APP服务器线程Thread-55关闭
+2022-01-09 18:30:31,384 Application_Server.py setup [line:77] INFO 服务器线程Thread-56开启
+2022-01-09 18:30:31,384 Application_Server.py handle [line:50] INFO ip 127.0.0.1 向APP服务器线程 Thread-56 发送信息:{'action': 'login', 'content': {'username': '124', 'password': '125'}}
+2022-01-09 18:30:31,667 Application_Server.py handle [line:68] INFO 服务器APP线程 Thread-56 向 ip 127.0.0.1 发送信息:{'action': 'login_response', 'content': {'status': 'True', 'reason': '登陆成功', 'account': ('124',)}}
+2022-01-09 18:30:31,667 Application_Server.py handle [line:70] ERROR ip 127.0.0.1 和APP服务器线程 Thread-56 链接断开
+2022-01-09 18:30:31,667 Application_Server.py handle [line:71] ERROR Expecting value: line 1 column 1 (char 0)
+2022-01-09 18:30:31,667 Application_Server.py finish [line:81] INFO APP服务器线程Thread-56关闭

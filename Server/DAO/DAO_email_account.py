@@ -63,11 +63,27 @@ class DAO_email_account(DAO_base):
         sql = """select password, private_key from email_account where account = %s"""
         result = self.execute(sql, account)
         if result != False and len(result) != 0:
-            print(result)
             password, private_key = result[0]
             r = RSA_encryption()
             password = r.decrypt_data(password, private_key)
             return password
+        else:
+            return None
+
+    def select_account(self, username: str) -> bool:
+        """
+        获取用户关联邮箱账号
+        Args:
+            username: 用户名
+
+        Returns:密码
+
+        """
+        sql = """select account from email_account where user_name = %s"""
+        result = self.execute(sql, username)
+        if result != False and len(result) != 0:
+            account = result[0]
+            return account
         else:
             return None
 

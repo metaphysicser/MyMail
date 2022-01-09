@@ -163,10 +163,13 @@ class Message_handler:
                        }
                        }
         elif res:  # 密码正确
+            email_account = DAO_email_account()
+            account = email_account.select_account(username)
             message = {"action": "login_response",
                        "content": {
                            "status": "True",
-                           "reason": "登陆成功"
+                           "reason": "登陆成功",
+                           "account": account
                        }
                        }
         else:  # 密码错误

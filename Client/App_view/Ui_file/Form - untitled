@@ -205,6 +205,9 @@ QLineEdit:focus{
              <bool>false</bool>
             </property>
             <widget class="QFrame" name="frame_3">
+             <property name="styleSheet">
+              <string notr="true">border:None;</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -272,9 +275,12 @@ border:none</string>
     border-color: rgb(2, 194, 18);
     min-width: 4em;
     padding: 6px;
-    
-    
 	font: 75 11pt &quot;微软雅黑&quot;;
+}
+QPushButton:pressed{
+background-color: rgb(2, 194, 18);
+color: rgb(255, 255, 255);
+
 }</string>
               </property>
               <property name="text">
@@ -297,10 +303,14 @@ border:none</string>
     border-radius: 10px;
     border-color: rgb(2, 194, 18);
     min-width: 4em;
-    padding: 6px;
-    
-    
+    padding: 6px;    
 	font: 75 11pt &quot;微软雅黑&quot;;
+}
+
+QPushButton:pressed{
+color: rgb(10, 2, 255);
+background-color: rgb(255, 255, 255);
+
 }</string>
               </property>
               <property name="text">

@@ -16,13 +16,19 @@ from PyQt5.QtCore import QCoreApplication
 from PyQt5.QtWidgets import QApplication
 from PyQt5.uic.properties import QtGui
 from PyQt5 import QtGui, QtWidgets
+from PySide2.QtWidgets import QStackedLayout
+
 from Client.App_view.View.Login_View import Login_View
+from Client.App_view.View.add_account import Add_account_View
 from Client.App_view.View.main import Ui_MainWindow
+from Client.App_view.View.register import Register_View
+from Client.App_view.View.write_email import Ui_Form
 from Client.Model.App_Model import App_Model
 
 
 class App_Controller:
     def __init__(self):
+
 
         self._app = QApplication(sys.argv)
         self._view = Login_View()
@@ -33,6 +39,26 @@ class App_Controller:
     def init(self):
         self._view.quit_signal.connect(QCoreApplication.instance().quit)  # 退出按钮
         self._view.login_signal.connect(self.login)  # 登陆按钮
+        self._view.register_signal.connect(self.register_open)
+
+    def register_init(self):
+        self._sub_view.register_signal.connect(self.register)  # 退出按钮
+        self._sub_view.quit_signal.connect(self.reg_close)
+
+    def add_account_init(self):
+        self._sub_view.add_signal.connect(self.add_)  # 退出按钮
+        self._sub_view.quit_signal.connect(self.reg_close)
+
+    def reg_close(self):
+        self._sub_view.close()
+
+    def add_(self):
+        account = self._sub_view.lineEdit.text()
+        password = self._sub_view.lineEdit_2.text()
+        res = self._model.add_account(self.username, password, account)
+        QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+
+
 
     def main_init(self):
         self._view.label_4.setText(self.username)  # 获得用户名
@@ -45,6 +71,37 @@ class App_Controller:
         self._view.sent_mail.connect(self.sent_mail)
         self._view.trash_bin.connect(self.trash_bin)
         self._view.draft_box.connect(self.draft_box)
+        self._view.add_account.connect(self.add_account)
+
+
+    def write_mail_init(self):
+        self._sub_view.send_signal.connect(self.send_mail)
+        self._sub_view.save_signal.connect(self.save_mail)
+
+    def register(self):
+        username = self._sub_view.lineEdit.text()
+        password = self._sub_view.lineEdit_2.text()
+        res = self._model.register(username, password)
+        QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+
+    def add_account(self):
+        add_account_window = Add_account_View()
+        self._sub_view = add_account_window
+        self.add_account_init()
+
+        self._sub_view.show()
+
+    def register_open(self):
+        """
+        注册
+        Returns:
+
+        """
+        register_window = Register_View()
+        self._sub_view = register_window
+        self.register_init()
+        self._sub_view.show()
+
 
     def login(self):
         """
@@ -67,6 +124,22 @@ class App_Controller:
         elif res["content"]["status"] == "False":  # 登陆失败
             pass
 
+    def send_mail(self):
+        sender = self._view.comboBox.currentText()
+        sender_name = self._view.label_4.text()
+        receiver = self._sub_view.lineEdit.text()
+        title = self._sub_view.lineEdit_2.text()
+        text = self._sub_view.textEdit.toPlainText()
+        file= self._sub_view.comboBox.file
+
+        res = self._model.send_email(sender, sender_name,receiver, title, text, file)
+        QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+
+
+        pass
+    def save_mail(self):
+        pass
+
     def restore_style(self):
         if self.focus is None:
             pass
@@ -84,6 +157,11 @@ class App_Controller:
             self.draft_box_normal()
     def write_mail(self):
         self.restore_style()
+
+        self._sub_view = Ui_Form()
+        self._view.qsl.addWidget(self._sub_view)
+        self.write_mail_init()
+
         self.focus = self._view.pushButton_2
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/newPrefix/img/写邮件_按下.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)

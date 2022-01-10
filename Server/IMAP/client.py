@@ -16,11 +16,13 @@ import imaplib
 # sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # sock.connect(('localhost', 8001))
 
-conn = imaplib.IMAP4(port = 143,host = 'localhost')
+conn = imaplib.IMAP4_SSL(host = 'imap.qq.com')
 print(1)
-conn.login("zpl@qq.com","10")
-conn.select()
-type_, data = conn.search(None, 'ALL')
+print(conn.login("zpl010720@qq.com","esnkoqfbkduucejh"))
+print(conn.select())
+type_, data = conn.fetch("1", '(RFC822)')
+print(type_)
+print(data)
 # print(2)
 # ret = conn.getquota(root='xxoo@sex.com')
 # flag = '1'

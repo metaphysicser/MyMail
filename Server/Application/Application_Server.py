@@ -45,15 +45,17 @@ class ThreadedAPPRequestHandler(socketserver.BaseRequestHandler):
                     self.data += temp_data
                     if temp_data[-2:] == CRLF:  # 遇到停止符号结束接收
                         break
-                self.data = json.loads(self.data[:-2].decode()) # 接收客户端信息
+
+                self.data = str(self.data[:-2], 'utf8').replace("'", '"')
+                self.data = json.loads(self.data)  # 接收客户端信息
 
                 logger.info("ip {} 向APP服务器线程 {} 发送信息:".format(self.client_address[0], cur_thread.name) + str(self.data))
                 if not self.data:
                     logger.error("ip {} 和APP服务器线程 {} 链接丢失".format(self.client_address[0], cur_thread.name))
                     break
 
-                message = handler.handle(self.data) # 处理客户端信息
-                print(message)
+                message = handler.handle(self.data)  # 处理客户端信息
+
                 message_bit = bytes(json.dumps(message), encoding="utf8") + CRLF
                 self.request.send(message_bit)
                 # block = 0

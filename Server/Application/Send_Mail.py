@@ -27,7 +27,7 @@ class SendMail(object):
     实现邮件的发送功能
     """
 
-    def __init__(self, receiver, sender_name, title, content, sys_sender, sys_pwd, file_list= []):
+    def __init__(self, receiver = '', sender_name = '', title = '', content = '', sys_sender = '', sys_pwd = '', file_list= []):
         self.receiver = receiver  # 发送地址
         self.sender_name = sender_name  # 发送人用户名
         self.title = title  # 标题
@@ -35,6 +35,21 @@ class SendMail(object):
         self.sys_sender = sys_sender  # 系统账户
         self.sys_pwd = sys_pwd  # 系统账户密码
         self.file_list = file_list
+        
+    def verify_account(self, account, password):
+        """
+        验证邮箱密码是否正确
+        Returns:
+
+        """
+        try:
+            target_server = "smtp." + account.split("@")[1]
+            server = smtplib.SMTP_SSL(target_server, SERVER_PORT[target_server], timeout=10)
+            server.login(account, password)
+            return True
+        except:
+            return False
+        
 
     def send_email(self):
         """

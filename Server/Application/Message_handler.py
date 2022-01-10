@@ -10,6 +10,7 @@ Attention：
 """
 import base64
 import logging
+import re
 
 from Server.Application.Send_Mail import SendMail
 from Server.DAO.DAO_email_account import DAO_email_account
@@ -18,6 +19,7 @@ from Server.DAO.DAO_transaction_records import DAO_transaction_records
 from Server.Log.Log import Logger
 from Server.DAO.DAO_email_user import DAO_email_user
 from Server.Utils.Snowflake import IdWorker
+from Server.Utils.judge_input import judge_input
 
 logger = Logger("../Log/server_history.log", logging.DEBUG, __name__).getlog()
 Attachment_path = "../Attachment/"
@@ -41,7 +43,6 @@ class Message_handler:
 
         """
         self.message = message
-        print(message)
         action = self.message["action"]  # 类型
         res = self.command(action)  # 根据消息类型调用不同的函数
         return res
@@ -93,7 +94,7 @@ class Message_handler:
                 "action": "send_mail_response",
                 "content": {
                     "status": "False",
-                    "reason": "发送失败"
+                    "reason": "发送失败，用户不存在"
                 }
             }
         else:
@@ -128,7 +129,7 @@ class Message_handler:
                     "action": "send_mail_response",
                     "content": {
                         "status": "False",
-                        "reason": "发送失败"
+                        "reason": "发送失败，参数错误"
                     }
                 }
         return message
@@ -180,6 +181,135 @@ class Message_handler:
                        }
                        }
         return message
+
+    def add_account(self):
+        """
+        添加邮箱
+               接受的命令格式：
+               {
+               "action": "add_account",
+                          "content": {
+                              "username": username,
+                              "password": password
+                           }
+                          }
+               Returns:
+
+                   True 添加成功
+                   False 添加失败
+
+
+        """
+        username = self.message["content"]["username"]
+        password = self.message["content"]["password"]
+        account = self.message["content"]["account"]
+        if len(username) == 0 or len(password) == 0 or len(account):
+            message = {"action": "add_account_response",
+                       "content": {
+                           "status": "False",
+                           "reason": "添加失败, 账号或密码不能为空"
+                       }
+                       }
+            return message
+        if re.search("@", account) is None:
+            message = {"action": "add_account_response",
+                       "content": {
+                           "status": "False",
+                           "reason": "添加失败, 邮箱不合法"
+                       }
+                       }
+            return message
+
+        mail = SendMail()
+        if mail.verify_account(account, password):
+            database = DAO_email_account()
+            res = database.insert(account, username, password)
+
+            if res:  # 注册成功
+                message = {"action": "add_account_response",
+                           "content": {
+                               "status": "True",
+                               "reason": "添加成功"
+                           }
+                           }
+            else:  # 注册失败
+                message = {"action": "add_account_response",
+                           "content": {
+                               "status": "False",
+                               "reason": "添加失败"
+                           }
+                           }
+        else:
+            message = {"action": "add_account_response",
+                       "content": {
+                           "status": "False",
+                           "reason": "添加失败"
+                       }
+                       }
+        return message
+
+    def register(self):
+        """
+        注册账号
+        接受的命令格式：
+        {
+        "action": "register",
+                   "content": {
+                       "username": username,
+                       "password": password
+                    }
+                   }
+        Returns:
+
+            True 注册成功
+            False 注册失败
+
+        """
+        username = self.message["content"]["username"]
+        password = self.message["content"]["password"]
+        if len(username)==0:
+            message = {"action": "register_response",
+                       "content": {
+                           "status": "False",
+                           "reason": "注册失败, 用户名不能为空"
+                       }
+                       }
+            return message
+        elif judge_input(password) is not True:
+            message = {"action": "register_response",
+                       "content": {
+                           "status": "False",
+                           "reason": "注册失败, " + judge_input(password)
+                       }
+                       }
+            return message
+
+
+        database = DAO_email_user()
+        res = database.register_user(username, password)
+
+        if res:  # 注册成功
+            message = {"action": "register_response",
+                       "content": {
+                           "status": "True",
+                           "reason": "注册成功"
+                       }
+                       }
+        else:  # 注册失败
+            message = {"action": "register_response",
+                       "content": {
+                           "status": "False",
+                           "reason": "注册失败"
+                       }
+                       }
+        return message
+
+    def check_mail(self):
+        """
+        登陆邮箱收取邮件
+        Returns:
+
+        """
 
     def undefined(self):
         pass

@@ -94,6 +94,60 @@ class App_Model:
         self.sock.close()  # 关闭连接
         return self.data
 
+    def register(self, username, password):
+        """
+        注册新账号
+        命令格式：
+        {"action": "register",
+                   "content": {
+                       "username": username,
+                       "password": password
+                    }
+                }
+        Args:
+            username: 用户名
+            password: 密码
+
+        Returns:
+
+        """
+        message = {"action": "register",
+         "content": {
+             "username": username,
+             "password": password
+         }
+         }
+        rec = self.send_rec_msg(message)
+        return rec
+
+    def add_account(self, username, password, account):
+        """
+        添加邮箱
+        命令格式：
+        {"action": "add_account",
+                   "content": {
+                       "username": username,
+                       "password": password,
+                       "account": account
+                    }
+                }
+        Args:
+            username: 用户名
+            password: 密码
+
+        Returns:
+
+        """
+        message = {"action": "add_account",
+         "content": {
+             "username": username,
+             "password": password,
+             "account": account
+         }
+         }
+        rec = self.send_rec_msg(message)
+        return rec
+
 
 
     def send_email(self, sender, receiver, sender_name, content, title, attachment = None):

@@ -55,17 +55,8 @@ class ThreadedAPPRequestHandler(socketserver.BaseRequestHandler):
                     break
 
                 message = handler.handle(self.data)  # 处理客户端信息
-
                 message_bit = bytes(json.dumps(message), encoding="utf8") + CRLF
                 self.request.send(message_bit)
-                # block = 0
-                # while True:
-                #     self.request.send(message_bit[block:block + Buffer].encode())
-                #     print(message_bit[block:block + Buffer])
-                #     if block > len(message_bit):
-                #         break
-                #     else:
-                #         block += Buffer
 
                 logger.info("服务器APP线程 {} 向 ip {} 发送信息:".format(cur_thread.name, self.client_address[0]) + str(message))
         except Exception as e:

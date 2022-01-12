@@ -20,8 +20,6 @@ class Window(QWidget):
 
     def __init__(self, *args, **kwargs):
         super(Window, self).__init__(*args, **kwargs)
-        self.resize(400, 400)
-        layout = QVBoxLayout(self)
 
 
         # 窗口透明度动画类

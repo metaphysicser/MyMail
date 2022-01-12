@@ -8,28 +8,22 @@
 Attention：
 
 """
+import base64
 import sys
-from imaplib import Int2AP
-import random
-
 from PyQt5.QtCore import QCoreApplication
 from PyQt5.QtWidgets import QApplication
 from PyQt5.uic.properties import QtGui
 from PyQt5 import QtGui, QtWidgets
-from PySide2.QtWidgets import QStackedLayout
-
 from Client.App_view.View.Login_View import Login_View
 from Client.App_view.View.add_account import Add_account_View
 from Client.App_view.View.main import Ui_MainWindow
+from Client.App_view.View.read_email import Read_Form
 from Client.App_view.View.register import Register_View
-from Client.App_view.View.write_email import Ui_Form
 from Client.Model.App_Model import App_Model
 
 
 class App_Controller:
     def __init__(self):
-
-
         self._app = QApplication(sys.argv)
         self._view = Login_View()
         self._model = App_Model()
@@ -57,14 +51,19 @@ class App_Controller:
         password = self._sub_view.lineEdit_2.text()
         res = self._model.add_account(self.username, password, account)
         QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+        self.email.append(account)
+
+        self._view.comboBox.addItems(self.email)
+        self.current_email = self._view.comboBox.currentText()
+
 
 
 
     def main_init(self):
         self._view.label_4.setText(self.username)  # 获得用户名
-        if self.email is not None:
-            self._view.comboBox.addItems(self.email)
-            self.current_email = self._view.comboBox.currentText()  # 获得用户已有邮箱
+
+        self._view.comboBox.addItems(self.email)
+        self.current_email = self._view.comboBox.currentText()  # 获得用户已有邮箱
         self._view.write_mail.connect(self.write_mail)
         self._view.receive_mail.connect(self.receive_mail)
         self._view.address_book.connect(self.address_book)
@@ -72,6 +71,8 @@ class App_Controller:
         self._view.trash_bin.connect(self.trash_bin)
         self._view.draft_box.connect(self.draft_box)
         self._view.add_account.connect(self.add_account)
+        self._sub_view = self._view.form1
+        self.write_mail_init()
 
 
     def write_mail_init(self):
@@ -88,7 +89,6 @@ class App_Controller:
         add_account_window = Add_account_View()
         self._sub_view = add_account_window
         self.add_account_init()
-
         self._sub_view.show()
 
     def register_open(self):
@@ -115,7 +115,7 @@ class App_Controller:
         QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
         if res["action"] == "login_response" and res["content"]["status"] == "True":  # 登陆成功
             self.username = username
-            self.email = res["content"]["account"]
+            self.email = [] if res["content"]["account"] is None else res["content"]["account"]
             main_window = Ui_MainWindow()
             self._view.close()
             self._view = main_window
@@ -124,19 +124,24 @@ class App_Controller:
         elif res["content"]["status"] == "False":  # 登陆失败
             pass
 
+
+
     def send_mail(self):
         sender = self._view.comboBox.currentText()
-        sender_name = self._view.label_4.text()
+        sender_name = self._sub_view.lineEdit.text()
         receiver = self._sub_view.lineEdit.text()
         title = self._sub_view.lineEdit_2.text()
         text = self._sub_view.textEdit.toPlainText()
         file= self._sub_view.comboBox.file
-
-        res = self._model.send_email(sender, sender_name,receiver, title, text, file)
+        res = self._model.send_email(sender, sender_name,receiver, title, text, file, "sent")
         QtWidgets.QMessageBox.warning(self._view, "提示", res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+        if res["content"]["status"] == "True":
+            self._sub_view.lineEdit.clear()
+            self._sub_view.lineEdit_2.clear()
+            self._sub_view.textEdit.clear()
 
 
-        pass
+
     def save_mail(self):
         pass
 
@@ -158,9 +163,11 @@ class App_Controller:
     def write_mail(self):
         self.restore_style()
 
-        self._sub_view = Ui_Form()
-        self._view.qsl.addWidget(self._sub_view)
+
+
+        self._sub_view = self._view.form1
         self.write_mail_init()
+        self._view.qsl.setCurrentIndex(0)
 
         self.focus = self._view.pushButton_2
         icon = QtGui.QIcon()
@@ -204,7 +211,7 @@ class App_Controller:
         self._view.pushButton_3.setIcon(icon)
         self._view.pushButton_3.setStyleSheet("QPushButton{\n"
                                               "color: rgb(255, 255, 255);\n"
-                                               "background-color: rgb(220, 0, 0);\n"
+                                              "background-color: rgb(220, 0, 0);\n"
                                               "    border-style: outset;\n"
                                               "    border-width: 0px;\n"
                                               "    border-radius: 30px;\n"
@@ -213,6 +220,45 @@ class App_Controller:
                                               "\n"
                                               "\n"
                                               "}\n")
+
+        self._sub_view = self._view.form2
+        self._view.qsl.setCurrentIndex(1)
+
+        account = self._view.comboBox.currentText()
+        self.res = self._model.receive_mail(account, "Inbox")
+        if self.res["content"]["status"] == "False":
+            QtWidgets.QMessageBox.warning(self._view, "提示", self.res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+        else:
+
+            self.mail_index = list(self.res["content"]["mail"].keys())
+            mail = self.res["content"]["mail"]
+            self._sub_view.dmodel.clear()
+            self._sub_view.show_mail(mail)
+            self._view.qsl.setCurrentIndex(1)
+
+            self._sub_view.look_signal.connect(self.look_mail)
+
+    def look_mail(self):
+        num = self._sub_view.listView.currentIndex().row()
+        mail_num = self.mail_index[num]
+        mail_content = self.res["content"]["mail"][str(mail_num)]
+        subject = mail_content["subject"]
+        body = mail_content["body"]
+
+        html = mail_content["html"]
+        if html is not None:
+            html = base64.b64decode(html)
+            html = str(html, encoding='utf8')
+        from_ = mail_content["from"][1]
+
+
+        read_window = Read_Form()
+        read_window.show_mail(from_, subject, html if html is not None else body)
+        read_window.show()
+
+
+
+
     def receive_mail_normal(self):
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/newPrefix/img/收件箱.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -228,6 +274,8 @@ class App_Controller:
                                               "\n"
                                               "\n"
                                               "}\n")
+
+
     def address_book(self):
         self.restore_style()
         self.focus = self._view.pushButton_4
@@ -279,6 +327,22 @@ class App_Controller:
                                               "\n"
                                               "\n"
                                               "}\n")
+        self._sub_view = self._view.form2
+        self._view.qsl.setCurrentIndex(1)
+
+        account = self._view.comboBox.currentText()
+        self.res = self._model.receive_mail(account, "Sent")
+        if self.res["content"]["status"] == "False":
+            QtWidgets.QMessageBox.warning(self._view, "提示", self.res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+        else:
+
+            self.mail_index = list(self.res["content"]["mail"].keys())
+            mail = self.res["content"]["mail"]
+            self._sub_view.dmodel.clear()
+            self._sub_view.show_mail(mail)
+            self._view.qsl.setCurrentIndex(1)
+
+            self._sub_view.look_signal.connect(self.look_mail)
 
     def sent_mail_normal(self):
         self.focus = self._view.pushButton_5
@@ -314,6 +378,23 @@ class App_Controller:
                                               "\n"
                                               "}\n")
 
+        self._sub_view = self._view.form2
+        self._view.qsl.setCurrentIndex(1)
+
+        account = self._view.comboBox.currentText()
+        self.res = self._model.receive_mail(account, "Junk")
+        if self.res["content"]["status"] == "False":
+            QtWidgets.QMessageBox.warning(self._view, "提示", self.res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+        else:
+
+            self.mail_index = list(self.res["content"]["mail"].keys())
+            mail = self.res["content"]["mail"]
+            self._sub_view.dmodel.clear()
+            self._sub_view.show_mail(mail)
+            self._view.qsl.setCurrentIndex(1)
+
+            self._sub_view.look_signal.connect(self.look_mail)
+
     def trash_bin_normal(self):
         self.focus = self._view.pushButton_6
         icon = QtGui.QIcon()
@@ -347,6 +428,22 @@ class App_Controller:
                                               "\n"
                                               "\n"
                                               "}\n")
+        self._sub_view = self._view.form2
+        self._view.qsl.setCurrentIndex(1)
+
+        account = self._view.comboBox.currentText()
+        self.res = self._model.receive_mail(account, "Drafts")
+        if self.res["content"]["status"] == "False":
+            QtWidgets.QMessageBox.warning(self._view, "提示", self.res["content"]["reason"], QtWidgets.QMessageBox.Cancel)
+        else:
+
+            self.mail_index = list(self.res["content"]["mail"].keys())
+            mail = self.res["content"]["mail"]
+            self._sub_view.dmodel.clear()
+            self._sub_view.show_mail(mail)
+            self._view.qsl.setCurrentIndex(1)
+
+            self._sub_view.look_signal.connect(self.look_mail)
     def draft_box_normal(self):
         self.focus = self._view.pushButton_7
         icon = QtGui.QIcon()

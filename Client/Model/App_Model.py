@@ -10,18 +10,29 @@ Attention：
 """
 import base64
 import json
-import random
-import sys
 import socket, sys
-from imaplib import Int2AP
+
 
 HOST = "127.0.0.1"
 PORT = 53831  # 端口号
 _GLOBAL_DEFAULT_TIMEOUT = object()  # 超时参数
 CRLF = b'\r\n'
 
-
+def htmlEscape(input):
+    if not input:
+        return input;
+    input = input.replace("&", "&amp;")
+    input = input.replace("<", "&lt;")
+    input = input.replace(">", "&gt;")
+    input = input.replace(" ", "&nbsp;")
+    input = input.replace("'", "&#39;")
+    input = input.replace("\"", "&quot;")
+    input = input.replace("\n", "<br/>")
+    return input
+        
+        
 class App_Model:
+
     """
     和服务端建立网络连接
     """
@@ -80,7 +91,7 @@ class App_Model:
         """
         message = bytes(json.dumps(message), encoding="utf8")
         self.open(self.host, self.port)  # 打开链接
-        self.sock.sendall(message+CRLF)  # 发送信息
+        self.sock.sendall(message + CRLF)  # 发送信息
         self.data = b""
         temp_data = self.sock.recv(1024)
         self.data += temp_data
@@ -90,7 +101,18 @@ class App_Model:
             if temp_data[-2:] == CRLF:  # 遇到停止符号结束接收
                 break
 
-        self.data = json.loads(self.data[:-2].decode())  # 接收客户端信息
+        print(self.data)
+
+        self.data = str(self.data[:-2], 'utf8')
+        print(self.data)
+        # self.data = htmlEscape(self.data)
+
+
+        
+    
+        if len(self.data) != 0:
+             self.data = json.loads(self.data,  strict=False)  # 接收客户端信息
+
         self.sock.close()  # 关闭连接
         return self.data
 
@@ -112,11 +134,11 @@ class App_Model:
 
         """
         message = {"action": "register",
-         "content": {
-             "username": username,
-             "password": password
-         }
-         }
+                   "content": {
+                       "username": username,
+                       "password": password
+                   }
+                   }
         rec = self.send_rec_msg(message)
         return rec
 
@@ -139,18 +161,40 @@ class App_Model:
 
         """
         message = {"action": "add_account",
-         "content": {
-             "username": username,
-             "password": password,
-             "account": account
-         }
-         }
+                   "content": {
+                       "username": username,
+                       "password": password,
+                       "account": account
+                   }
+                   }
         rec = self.send_rec_msg(message)
         return rec
 
+    def receive_mail(self, account, type):
+        """
+                接收邮件
+                命令格式：
+                {"action": "receive_mail",
+                           "content": {
+                               "account": account
+                            }
+                        }
+                Args:
+                   account: 邮箱账号
 
+                Returns:
 
-    def send_email(self, sender, receiver, sender_name, content, title, attachment = None):
+                """
+        message = {"action": "receive_mail",
+                   "content": {
+                       "account": account,
+                       "type": type
+                   }
+                   }
+        rec = self.send_rec_msg(message)
+        return rec
+
+    def send_email(self, sender, receiver, sender_name, content, title, attachment=None, type="sent"):
         """
         发送电子邮件
         发送的命令格式：
@@ -163,6 +207,7 @@ class App_Model:
                   "subject": subject,
                   "text": text,
                   "attachment": attachment
+                  "type": type
                 }
         }
         Args:
@@ -178,19 +223,20 @@ class App_Model:
 
         """
         message = {
-                "action" : "send_email",
-                "content": {
-                  "sender" : sender,
-                  "sender_name": sender_name,
-                  "receiver" : receiver,
-                  "subject": title,
-                  "text": content,
-                  "attachment": None
-                }
+            "action": "send_email",
+            "content": {
+                "sender": sender,
+                "sender_name": sender_name,
+                "receiver": receiver,
+                "subject": title,
+                "text": content,
+                "attachment": None,
+                "type": type
+            }
         }
         if attachment is not None:  # 将附件放入消息中
             message["content"]["attachment"] = {}
-            for filename,filepath in attachment.items():
+            for filename, filepath in attachment.items():
                 with open(filepath, 'rb') as f:
                     file_byte = base64.b64encode(f.read())
                 file_str = file_byte.decode("ascii")
@@ -231,5 +277,7 @@ class App_Model:
 
 
 if __name__ == "__main__":
-    App = App_Model()
-    App.listen()
+    a = App_Model()
+    print(a.receive_mail(account="zpl010720@qq.com"))
+
+    

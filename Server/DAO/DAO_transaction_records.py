@@ -22,7 +22,7 @@ class DAO_transaction_records(DAO_base):
     连接数据库中的transaction_records表，并执行相关操作
 
     """
-    def insert(self, email_id: str, sender: str, receiver: str, content: str, title:str):
+    def insert(self, email_id: str, sender: str, receiver: str, content: str, title:str, type: str):
         """
         插入邮件发送记录
         Args:
@@ -36,13 +36,13 @@ class DAO_transaction_records(DAO_base):
         now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
         sql = """INSERT INTO transaction_records(email_id,
-                 sender, receiver, content, time, title)
-                 VALUES (%s, %s, %s,%s,%s,%s)"""
-        if self.execute(sql,email_id, sender,receiver, content, now, title) != False:
-            logger.info("transaction_records表 插入{}, {}, {}, {} ,{}, {} 记录成功".format(email_id, sender,receiver, content, now, title))
+                 sender, receiver, content, time, title, type)
+                 VALUES (%s, %s, %s,%s,%s,%s, %s)"""
+        if self.execute(sql,email_id, sender,receiver, content, now, title,type) != False:
+            logger.info("transaction_records表 插入{}, {}, {}, {} ,{}, {} ,{}记录成功".format(email_id, sender,receiver, content, now, title,type))
         else:
-            logger.info("transaction_records表 插入{}, {}, {}, {}, {}, {} 记录失败".format(email_id, sender,receiver, content, now, title))
+            logger.info("transaction_records表 插入{}, {}, {}, {}, {}, {} ,{}记录失败".format(email_id, sender,receiver, content, now, title,type))
 
 if __name__ == "__main__":
     d = DAO_transaction_records()
-    d.insert("12","zpl01020@qq.com", "fewa@ee.com", "test","test")
+    d.insert("123","zpl01020@qq.com", "fewa@ee.com", "test","test", "sent")

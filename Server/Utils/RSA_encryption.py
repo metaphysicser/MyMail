@@ -9,11 +9,8 @@ Attention：
 
 """
 from Crypto import Random
-from Crypto.PublicKey import RSA
 import base64
 from Crypto.PublicKey import RSA
-from Crypto.Hash import SHA
-from Crypto.Signature import PKCS1_v1_5 as PKCS1_signature
 from Crypto.Cipher import PKCS1_v1_5 as PKCS1_cipher
 
 random_generator = Random.new().read

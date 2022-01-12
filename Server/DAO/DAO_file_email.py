@@ -35,9 +35,9 @@ class DAO_file_email(DAO_base):
                  file_id, file_name)
                  VALUES (%s, %s, %s)"""
         if self.execute(sql,email_id, file_id, file_name) != False:
-            logger.info("transaction_records表 插入{}, {}, {} 记录成功".format(email_id, file_id, file_name))
+            logger.info("transaction_records表 插入{}, {}记录成功".format(email_id, file_id))
         else:
-            logger.info("transaction_records表 插入{}, {}, {} 记录失败".format(email_id, file_id, file_name))
+            logger.info("transaction_records表 插入{}, {}记录失败".format(email_id, file_id))
 
 if __name__ == "__main__":
     d = DAO_file_email()

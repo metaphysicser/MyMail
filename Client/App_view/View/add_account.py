@@ -152,15 +152,8 @@ class Add_account_View(CircleLineWindow):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.lineEdit.setPlaceholderText(_translate("Form", "用户名"))
+        self.lineEdit.setPlaceholderText(_translate("Form", "邮箱账号"))
         self.lineEdit_2.setPlaceholderText(_translate("Form", "密码"))
         self.pushButton_2.setText(_translate("Form", "添加"))
         self.pushButton.setText(_translate("Form", "退出"))
 
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    window = Register_View()
-    window.show()
-    sys.exit(app.exec_())

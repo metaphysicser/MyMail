@@ -12,7 +12,8 @@ import base64
 import logging
 import re
 
-from Server.Application.Send_Mail import SendMail
+from Server.Utils.Receive_mail import ReceiveMailDealer
+from Server.Utils.Send_Mail import SendMail
 from Server.DAO.DAO_email_account import DAO_email_account
 from Server.DAO.DAO_file_email import DAO_file_email
 from Server.DAO.DAO_transaction_records import DAO_transaction_records
@@ -71,7 +72,8 @@ class Message_handler:
                   "receiver" : receiver,
                   "subject": subject,
                   "text": text,
-                  ”attachment“ : attachment
+                  ”attachment“ : attachment,
+                  "type": type
                 }
         }
         Returns:
@@ -83,6 +85,7 @@ class Message_handler:
         subject = self.message["content"]["subject"]
         text = self.message["content"]["text"]
         attachment = self.message["content"]["attachment"]
+        type = self.message["content"]["type"]
 
         database1 = DAO_email_account()
         database2 = DAO_file_email()
@@ -98,15 +101,17 @@ class Message_handler:
                 }
             }
         else:
-            email_id = IdWorker(15).get_id()
-            database3.insert(email_id, sender, receiver, text, subject)  # 插入发送记录
+            email_id = str(IdWorker(15).get_id())
+            database3.insert(email_id, sender, receiver, text, subject, type)  # 插入发送记录
 
-            file_list = []
+            file_list = {}
+
+
 
             if attachment is not None:  # 将附件重命名存入服务器本地
                 for filename, file_str in attachment.items():
-                    file_id = IdWorker(15).get_id()
-                    file_list.append(file_id)
+                    file_id = str(IdWorker(15).get_id())
+                    file_list[filename] = file_id
                     file_byte = base64.b64decode(file_str)
                     file_json = open(Attachment_path + file_id, 'wb')
                     file_json.write(file_byte)
@@ -170,7 +175,7 @@ class Message_handler:
                        "content": {
                            "status": "True",
                            "reason": "登陆成功",
-                           "account": account
+                           "account": account if account is not None else []
                        }
                        }
         else:  # 密码错误
@@ -203,7 +208,7 @@ class Message_handler:
         username = self.message["content"]["username"]
         password = self.message["content"]["password"]
         account = self.message["content"]["account"]
-        if len(username) == 0 or len(password) == 0 or len(account):
+        if len(username) == 0 or len(password) == 0 or len(account)==0:
             message = {"action": "add_account_response",
                        "content": {
                            "status": "False",
@@ -267,7 +272,7 @@ class Message_handler:
         """
         username = self.message["content"]["username"]
         password = self.message["content"]["password"]
-        if len(username)==0:
+        if len(username) == 0:
             message = {"action": "register_response",
                        "content": {
                            "status": "False",
@@ -283,7 +288,6 @@ class Message_handler:
                        }
                        }
             return message
-
 
         database = DAO_email_user()
         res = database.register_user(username, password)
@@ -304,12 +308,55 @@ class Message_handler:
                        }
         return message
 
-    def check_mail(self):
+    def receive_mail(self):
         """
         登陆邮箱收取邮件
+        "action": "receive_mail",
+                   "content": {
+                       "account": account,
+                       "type" : type
+                                           }
+                   }
         Returns:
 
         """
+        account = self.message["content"]["account"]
+        type = self.message["content"]["type"]
+
+        d = DAO_email_account()
+        password = d.select_password(account)
+
+        if password is None:
+            message = {
+                "action": "receive_mail_response",
+                "content": {
+                    "status": "False",
+                    "mail": None,
+                    "reason": "获取失败，邮箱不存在"
+                }
+            }
+            return message
+
+        rml = ReceiveMailDealer(account, password)
+        rml.select(type)
+        status, num = rml.search("All")
+        newlist = num[0].split()
+
+        mail = {}
+
+        for item in newlist:
+            mail[str(item)] = rml.getMailPartInfo(item)
+
+        message = {
+            "action": "receive_mail_response",
+            "content": {
+                    "status": "True",
+                    "mail": mail,
+                    "reason": "获取成功"
+                }
+        }
+
+        return message
 
     def undefined(self):
         pass

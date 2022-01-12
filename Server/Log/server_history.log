@@ -27,3 +27,24 @@
 2022-01-08 23:34:37,094 IMAPLib.py handle_command [line:104] ERROR C1a32fg3534 capability 是一个不符合格式的命令
 2022-01-08 23:35:08,316 IMAPLib.py handle_command [line:104] ERROR [A[A[Ahfa  CAPABILITY 是一个不符合格式的命令
 2022-01-09 00:13:30,106 Send_Mail.py send_email [line:61] INFO 用户test发往zpl010720@qq.com的邮件发送成功
+2022-01-12 04:16:16,756 Send_Mail.py send_email [line:76] INFO 用户zpl发往zpl010720@qq.com的邮件发送成功
+2022-01-12 04:17:01,654 Send_Mail.py send_email [line:72] ERROR 用户zpl010720@qq.com发往zpl的邮件发送失败
+2022-01-12 04:17:01,655 Send_Mail.py send_email [line:73] ERROR {'zpl': (501, b'Bad address syntax. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000730')}
+2022-01-12 04:18:07,620 Send_Mail.py send_email [line:72] ERROR 用户zpl010720@qq.com发往zpl的邮件发送失败
+2022-01-12 04:18:07,620 Send_Mail.py send_email [line:73] ERROR {'zpl': (501, b'Bad address syntax. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000730')}
+2022-01-12 04:20:47,325 Send_Mail.py send_email [line:76] INFO 用户zpl010720@qq.com发往zpl010720@qq.com的邮件发送成功
+2022-01-12 04:22:35,686 Send_Mail.py send_email [line:72] ERROR 用户wrqwagr发往wrqwagr的邮件发送失败
+2022-01-12 04:22:35,686 Send_Mail.py send_email [line:73] ERROR {'wrqwagr': (501, b'Bad address syntax. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000730')}
+2022-01-12 04:40:37,165 Send_Mail.py message [line:108] ERROR 'list' object has no attribute 'items'
+2022-01-12 04:40:37,165 Send_Mail.py send_email [line:72] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-12 04:40:37,165 Send_Mail.py send_email [line:73] ERROR 无法构建邮件正文
+2022-01-12 04:40:51,374 Send_Mail.py message [line:108] ERROR 'list' object has no attribute 'items'
+2022-01-12 04:40:51,374 Send_Mail.py send_email [line:72] ERROR 用户zpl发往zpl010720@qq.com的邮件发送失败
+2022-01-12 04:40:51,374 Send_Mail.py send_email [line:73] ERROR 无法构建邮件正文
+2022-01-12 04:44:28,294 Send_Mail.py send_email [line:76] INFO 用户zpl发往zpl010720@qq.com的邮件发送成功
+2022-01-12 04:45:25,827 Send_Mail.py send_email [line:72] ERROR 用户zpl0100720@qq.com发往zpl0100720@qq.com的邮件发送失败
+2022-01-12 04:45:25,827 Send_Mail.py send_email [line:73] ERROR (550, b'Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MBFIkizp6Ni9/0VjReocD9RqUIOzkNyDaWw4Wf8CI6dMA+MNiXxGppO7m8cpYdbr3A== IP: 120.236.177.57]')
+2022-01-12 04:46:13,746 Send_Mail.py send_email [line:72] ERROR 用户zpl0100720@qq.com发往zpl0100720@qq.com的邮件发送失败
+2022-01-12 04:46:13,746 Send_Mail.py send_email [line:73] ERROR (550, b'Mail content denied. http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000726 [MBFIkizp6Ni9/0VjReocD9S7lfkodRcgLkjmJQRjYNFkhQxe6Ne9w5Fo5MqaIASkWg== IP: 120.236.177.57]')
+2022-01-12 04:46:59,042 Send_Mail.py send_email [line:76] INFO 用户zpl010720@gmail.com发往zpl010720@gmail.com的邮件发送成功
+2022-01-12 19:50:53,463 Send_Mail.py send_email [line:76] INFO 用户zpl010720@qq.com发往zpl010720@qq.com的邮件发送成功

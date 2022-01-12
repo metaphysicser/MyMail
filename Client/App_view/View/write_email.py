@@ -61,7 +61,7 @@ class Ui_Form(QWidget):
 
     def onOpenFile(self):
         path, _ = QFileDialog.getOpenFileName(
-            self, '请选择文件', '', 'excel(*.xlsx *.xls);word(*.docx *.doc);pdf(*.pdf);png(*.png);jpg(*.jpg);zip(*.zip)')
+            self, '请选择文件', '', 'excel(*.xlsx *.xls);word(*.docx);pdf(*.pdf);png(*.png);jpg(*.jpg);zip(*.zip)')
         if not path:
             return
         fileName = path.split("/")[-1]
@@ -76,7 +76,7 @@ class Ui_Form(QWidget):
 
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(682, 466)
+        Form.resize(701, 500)
         Form.setMinimumSize(QtCore.QSize(682, 466))
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
